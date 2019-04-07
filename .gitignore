@@ -1,0 +1,6 @@
+# ignore archives
+*.7z
+*.zip
+
+# ignore workspace
+*.code-workspace
