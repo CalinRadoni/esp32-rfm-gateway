@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-08"
-Rev "6"
+Rev "7"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1535,7 +1535,7 @@ U 1 1 5CB3E766
 P 1050 6350
 F 0 "SYM3" H 1200 6350 50  0001 C CNN
 F 1 "High Voltage !" H 1128 6350 50  0000 L CNN
-F 2 "Symbol:Symbol_HighVoltage_Type1_CopperTop_Big" H 1050 6350 50  0001 C CNN
+F 2 "Symbol:Symbol_Highvoltage_Type2_CopperTop_Small" H 1050 6350 50  0001 C CNN
 F 3 "" V 1050 6350 50  0001 C CNN
 	1    1050 6350
 	1    0    0    -1  
@@ -1731,17 +1731,6 @@ F 3 "" H 1050 6950 60  0000 C CNN
 	1    1050 6850
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:Earth #PWR0141
-U 1 1 5CAEA74F
-P 1500 7050
-F 0 "#PWR0141" H 1500 6800 50  0001 C CNN
-F 1 "Earth" H 1500 6900 50  0001 C CNN
-F 2 "" H 1500 7050 50  0001 C CNN
-F 3 "~" H 1500 7050 50  0001 C CNN
-	1    1500 7050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 6750 1600 6750
 Wire Wire Line
@@ -1750,10 +1739,21 @@ Wire Wire Line
 	1500 6850 1500 7050
 Wire Wire Line
 	1200 6850 1500 6850
-Text Label 1250 6750 0    50   ~ 0
+Text Label 1300 6750 0    50   ~ 0
 ACL
-Text Label 1250 6850 0    50   ~ 0
-ACE
-Text Label 1250 6950 0    50   ~ 0
+Text Label 1300 6950 0    50   ~ 0
 ACN
+$Comp
+L power:Earth #PWR0141
+U 1 1 5CB3D39A
+P 1500 7050
+F 0 "#PWR0141" H 1500 6800 50  0001 C CNN
+F 1 "Earth" H 1500 6900 50  0001 C CNN
+F 2 "" H 1500 7050 50  0001 C CNN
+F 3 "~" H 1500 7050 50  0001 C CNN
+	1    1500 7050
+	1    0    0    -1  
+$EndComp
+Text Label 1250 6850 0    50   ~ 0
+Earth
 $EndSCHEMATC
