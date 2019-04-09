@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-08"
-Rev "7"
+Date "2019-04-09"
+Rev "9"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1535,7 +1535,7 @@ U 1 1 5CB3E766
 P 1050 6350
 F 0 "SYM3" H 1200 6350 50  0001 C CNN
 F 1 "High Voltage !" H 1128 6350 50  0000 L CNN
-F 2 "Symbol:Symbol_Highvoltage_Type2_CopperTop_Small" H 1050 6350 50  0001 C CNN
+F 2 "Symbol:Symbol_HighVoltage_Type1_CopperTop_Big" H 1050 6350 50  0001 C CNN
 F 3 "" V 1050 6350 50  0001 C CNN
 	1    1050 6350
 	1    0    0    -1  
@@ -1756,4 +1756,60 @@ F 3 "~" H 1500 7050 50  0001 C CNN
 $EndComp
 Text Label 1250 6850 0    50   ~ 0
 Earth
+$Comp
+L calin:Symbol_Generic SYM4
+U 1 1 5CAC5E73
+P 1050 6500
+F 0 "SYM4" H 1200 6500 50  0001 C CNN
+F 1 "High Voltage !" H 1128 6500 50  0000 L CNN
+F 2 "Symbol:Symbol_HighVoltage_Type1_CopperTop_Big" H 1050 6500 50  0001 C CNN
+F 3 "" V 1050 6500 50  0001 C CNN
+	1    1050 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:CS_4 J5
+U 1 1 5CAE5A37
+P 8200 1100
+F 0 "J5" H 8200 1350 60  0000 C CNN
+F 1 "PinsI2C" V 8300 1100 50  0000 C CNN
+F 2 "CalinConnectors:Pin_Header_Straight_1x04" H 8200 1250 60  0001 C CNN
+F 3 "" H 8200 1250 60  0000 C CNN
+	1    8200 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 5CAE5A3D
+P 7950 1050
+F 0 "#PWR0142" H 7950 800 50  0001 C CNN
+F 1 "GND" V 7950 850 50  0000 C CNN
+F 2 "" H 7950 1050 50  0000 C CNN
+F 3 "" H 7950 1050 50  0000 C CNN
+	1    7950 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0143
+U 1 1 5CAE5A43
+P 7950 950
+F 0 "#PWR0143" H 7950 800 50  0001 C CNN
+F 1 "+3V3" V 7950 1150 50  0000 C CNN
+F 2 "" H 7950 950 50  0000 C CNN
+F 3 "" H 7950 950 50  0000 C CNN
+	1    7950 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8050 950  7950 950 
+Wire Wire Line
+	8050 1050 7950 1050
+Wire Wire Line
+	8050 1150 7550 1150
+Wire Wire Line
+	8050 1250 7550 1250
+Text Label 7650 1150 0    50   ~ 0
+SCL
+Text Label 7650 1250 0    50   ~ 0
+SDA
 $EndSCHEMATC
