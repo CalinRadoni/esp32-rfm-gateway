@@ -1812,4 +1812,6 @@ Text Label 7650 1150 0    50   ~ 0
 SCL
 Text Label 7650 1250 0    50   ~ 0
 SDA
+Text Notes 4300 4200 0    118  ~ 0
+1. MCP73832T-2ACI (sau 2ADI) pentru ca are Stat open-drain\n2. Split R25 ca sa vezi daca 5V e prezenta sau NU
 $EndSCHEMATC
