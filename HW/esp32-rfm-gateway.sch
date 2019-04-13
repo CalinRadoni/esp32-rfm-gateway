@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-13"
-Rev "11"
+Rev "12"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1940,4 +1940,41 @@ Wire Wire Line
 	4200 6800 4300 6800
 Wire Wire Line
 	4200 7000 4300 7000
+$Comp
+L calin:CS_2s J25
+U 1 1 5CB55B01
+P 5050 6850
+F 0 "J25" H 5050 7000 60  0000 C CNN
+F 1 "c3V3" V 5150 6850 50  0000 C CNN
+F 2 "CalinConnectors:Pin_Header_Angled_1x02" H 5050 6900 60  0001 C CNN
+F 3 "" H 5050 6900 60  0000 C CNN
+	1    5050 6850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 5CB55BCE
+P 5300 6800
+F 0 "#PWR0147" H 5300 6550 50  0001 C CNN
+F 1 "GND" V 5300 6550 50  0000 C CNN
+F 2 "" H 5300 6800 50  0000 C CNN
+F 3 "" H 5300 6800 50  0000 C CNN
+	1    5300 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0148
+U 1 1 5CB55E09
+P 5300 6900
+F 0 "#PWR0148" H 5300 6750 50  0001 C CNN
+F 1 "+3V3" V 5300 7150 50  0000 C CNN
+F 2 "" H 5300 6900 50  0000 C CNN
+F 3 "" H 5300 6900 50  0000 C CNN
+	1    5300 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 6800 5200 6800
+Wire Wire Line
+	5200 6900 5300 6900
 $EndSCHEMATC
