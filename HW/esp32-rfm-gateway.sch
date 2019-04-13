@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-13"
-Rev "10"
+Rev "11"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1891,25 +1891,14 @@ Wire Wire Line
 	1550 6850 1500 6850
 Connection ~ 1500 6850
 $Comp
-L calin:CS_2s J24
-U 1 1 5CB25633
-P 4050 6850
-F 0 "J24" H 4050 7000 60  0000 C CNN
-F 1 "c5Vbs" V 4150 6850 50  0000 C CNN
-F 2 "CalinConnectors:Pin_Header_Angled_1x02" H 4050 6900 60  0001 C CNN
-F 3 "" H 4050 6900 60  0000 C CNN
-	1    4050 6850
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+5VP #PWR0144
 U 1 1 5CB25639
-P 4300 6800
-F 0 "#PWR0144" H 4300 6650 50  0001 C CNN
-F 1 "+5VP" V 4300 7050 50  0000 C CNN
-F 2 "" H 4300 6800 50  0000 C CNN
-F 3 "" H 4300 6800 50  0000 C CNN
-	1    4300 6800
+P 4300 7000
+F 0 "#PWR0144" H 4300 6850 50  0001 C CNN
+F 1 "+5VP" V 4300 7250 50  0000 C CNN
+F 2 "" H 4300 7000 50  0000 C CNN
+F 3 "" H 4300 7000 50  0000 C CNN
+	1    4300 7000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1924,7 +1913,31 @@ F 3 "" H 4300 6900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4300 6800 4200 6800
-Wire Wire Line
 	4200 6900 4300 6900
+$Comp
+L calin:CS_3 J24
+U 1 1 5CB26001
+P 4050 6900
+F 0 "J24" H 4050 7100 60  0000 C CNN
+F 1 "cPS" V 4150 6900 50  0000 C CNN
+F 2 "CalinConnectors:Pin_Header_Angled_1x03" H 4050 7000 60  0001 C CNN
+F 3 "" H 4050 7000 60  0000 C CNN
+	1    4050 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0146
+U 1 1 5CB3D514
+P 4300 6800
+F 0 "#PWR0146" H 4300 6650 50  0001 C CNN
+F 1 "+BATT" H 4150 6950 50  0000 L CNN
+F 2 "" H 4300 6800 50  0001 C CNN
+F 3 "" H 4300 6800 50  0001 C CNN
+	1    4300 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 6800 4300 6800
+Wire Wire Line
+	4200 7000 4300 7000
 $EndSCHEMATC
