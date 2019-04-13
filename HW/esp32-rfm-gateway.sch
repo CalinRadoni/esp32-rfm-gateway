@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-13"
-Rev "14"
+Rev "15"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -777,8 +777,6 @@ Wire Wire Line
 	3550 2400 3050 2400
 Text Label 3150 2700 0    50   ~ 0
 DIO0
-Text Label 3150 2600 0    50   ~ 0
-IO26
 Text Label 3150 2500 0    50   ~ 0
 IO25
 Text Label 3150 2400 0    50   ~ 0
@@ -1414,7 +1412,7 @@ Text Label 6750 1450 0    50   ~ 0
 U0TXD
 Text Label 6750 1550 0    50   ~ 0
 U0RXD
-Text Label 5450 2800 0    50   ~ 0
+Text Label 3150 2600 0    50   ~ 0
 VBatMC
 Wire Wire Line
 	10050 3300 9950 3300
@@ -1638,7 +1636,6 @@ NoConn ~ 6150 2700
 NoConn ~ 3050 2300
 NoConn ~ 3050 2400
 NoConn ~ 3050 2500
-NoConn ~ 3050 2600
 $Comp
 L calin:CS_5 J30
 U 1 1 5CCE7D57
@@ -1992,4 +1989,7 @@ Wire Wire Line
 	1850 7100 2150 7100
 Text Label 1900 7100 0    50   ~ 0
 Earth
+NoConn ~ 6150 2800
+Text Label 5450 2800 0    50   ~ 0
+IO4
 $EndSCHEMATC
