@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-13"
-Rev "15"
+Rev "16"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -776,11 +776,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 2400 3050 2400
 Text Label 3150 2700 0    50   ~ 0
-DIO0
-Text Label 3150 2500 0    50   ~ 0
-IO25
-Text Label 3150 2400 0    50   ~ 0
-IO33
+DIO2
 $Comp
 L calin:R R2
 U 1 1 5C28CE10
@@ -805,8 +801,6 @@ F 3 "" H 6500 3500 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3550 2300 3050 2300
-Text Label 3150 2300 0    50   ~ 0
-IO32
 $Comp
 L calin:LED D1
 U 1 1 5C489CE1
@@ -1303,17 +1297,13 @@ Wire Wire Line
 	3550 1900 3050 1900
 Wire Wire Line
 	3550 2000 3050 2000
-Wire Wire Line
-	3550 2100 3050 2100
-Wire Wire Line
-	3550 2200 3050 2200
-Text Label 3150 1900 0    50   ~ 0
-ADC_Vin
 Text Label 3150 2000 0    50   ~ 0
+ADC_Vin
+Text Label 3150 1900 0    50   ~ 0
 ADC_Batt
-Text Label 3150 2100 0    50   ~ 0
-DIO2
-Text Label 3150 2200 0    50   ~ 0
+Text Label 3150 2500 0    50   ~ 0
+DIO0
+Text Label 3150 2600 0    50   ~ 0
 DIO1
 Wire Wire Line
 	5350 2100 5850 2100
@@ -1412,7 +1402,7 @@ Text Label 6750 1450 0    50   ~ 0
 U0TXD
 Text Label 6750 1550 0    50   ~ 0
 U0RXD
-Text Label 3150 2600 0    50   ~ 0
+Text Label 3150 2400 0    50   ~ 0
 VBatMC
 Wire Wire Line
 	10050 3300 9950 3300
@@ -1633,9 +1623,6 @@ NoConn ~ 6150 2400
 NoConn ~ 6150 2500
 NoConn ~ 6150 2600
 NoConn ~ 6150 2700
-NoConn ~ 3050 2300
-NoConn ~ 3050 2400
-NoConn ~ 3050 2500
 $Comp
 L calin:CS_5 J30
 U 1 1 5CCE7D57
@@ -1828,7 +1815,7 @@ Wire Wire Line
 Connection ~ 2750 4900
 Text Label 2850 4900 0    50   ~ 0
 ChargeStat
-Text Label 4750 4000 0    50   ~ 0
+Text Label 3150 2300 0    50   ~ 0
 ChargeStat
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -1992,4 +1979,6 @@ Earth
 NoConn ~ 6150 2800
 Text Label 5450 2800 0    50   ~ 0
 IO4
+NoConn ~ 3550 2100
+NoConn ~ 3550 2200
 $EndSCHEMATC
