@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-13"
-Rev "12"
+Rev "14"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1512,7 +1512,7 @@ U 1 1 5CB3E766
 P 1050 6350
 F 0 "SYM3" H 1200 6350 50  0001 C CNN
 F 1 "High Voltage !" H 1128 6350 50  0000 L CNN
-F 2 "Symbol:Symbol_HighVoltage_Type1_CopperTop_Big" H 1050 6350 50  0001 C CNN
+F 2 "CalinGeneric:Symbol_HighVoltage_SilkS" H 1050 6350 50  0001 C CNN
 F 3 "" V 1050 6350 50  0001 C CNN
 	1    1050 6350
 	1    0    0    -1  
@@ -1738,7 +1738,7 @@ U 1 1 5CAC5E73
 P 1050 6500
 F 0 "SYM4" H 1200 6500 50  0001 C CNN
 F 1 "High Voltage !" H 1128 6500 50  0000 L CNN
-F 2 "Symbol:Symbol_HighVoltage_Type1_CopperTop_Big" H 1050 6500 50  0001 C CNN
+F 2 "CalinGeneric:Symbol_HighVoltage_SilkS" H 1050 6500 50  0001 C CNN
 F 3 "" V 1050 6500 50  0001 C CNN
 	1    1050 6500
 	1    0    0    -1  
@@ -1977,4 +1977,19 @@ Wire Wire Line
 	5300 6800 5200 6800
 Wire Wire Line
 	5200 6900 5300 6900
+$Comp
+L calin:HolePlated H5
+U 1 1 5CB7E46D
+P 1750 7100
+F 0 "H5" H 1750 7200 60  0000 C CNN
+F 1 "HolePlated" H 1750 7000 60  0001 C CNN
+F 2 "CalinGeneric:HolePlated-M2.5" H 1750 7100 60  0001 C CNN
+F 3 "" H 1750 7100 60  0000 C CNN
+	1    1750 7100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 7100 2150 7100
+Text Label 1900 7100 0    50   ~ 0
+Earth
 $EndSCHEMATC
