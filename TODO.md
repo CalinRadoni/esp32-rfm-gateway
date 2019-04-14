@@ -2,6 +2,19 @@
 
 ## Working
 
+### USART2
+
+Add a header for USART2.
+A connector on the back would be usefull ?
+
+For a redundant configuration USART2 can be used as synchronization bus.
+
+### SMA
+
+Draw the SMA symbol in KiCAD better
+
+Build the 3D model for it
+
 ### LEDS
 
 Who does not like LEDs ?
@@ -25,33 +38,20 @@ For touch button:
 - Touch button with ESP32's capabilities or a dedicated IC like AT42QT1010 ?
 - The electrode ?
 
-### CryptoAuthentication
-
-Put a CryptoAuthentication device on the bottom of the board.
-See https://www.microchip.com/design-centers/security-ics/cryptoauthentication for options.
-
 ### Expansion
 
 Add a header for some available pins.
-
-### USART2
-
-Add a header for USART2.
-A connector on the back would be usefull ?
-
-For a redundant configuration USART2 can be used as synchronization bus.
-
-### SMA
-
-Draw the SMA symbol in KiCAD better
-
-Build the 3D model for it
 
 ### Front panel
 
 After buying the cases measure the front panel, design a custom one and make it to a fablab.
 
 ## Solved
+
+### CryptoAuthentication
+
+Done, placed a CryptoAuthentication compatible with ATSHA204A, ATECC508A and ATECC608A device.
+*Put a CryptoAuthentication device on the bottom of the board.*
 
 ### General purpose microcontroller
 
