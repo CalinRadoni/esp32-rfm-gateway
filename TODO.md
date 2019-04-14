@@ -9,12 +9,6 @@ A connector on the back would be usefull ?
 
 For a redundant configuration USART2 can be used as synchronization bus.
 
-### SMA
-
-Draw the SMA symbol in KiCAD better
-
-Build the 3D model for it
-
 ### LEDS
 
 Who does not like LEDs ?
@@ -79,6 +73,12 @@ Done
 
 No because the height of the three pins AC connectors is 20 mm so those may be too big to be used
 *Should I use a panel mounted power connector or just a hole to pass the cable through ?*
+
+### SMA
+
+Done *Draw the SMA symbol in KiCAD better*
+
+No, the datasheet lacks some dimensions *Build the 3D model for it*
 
 ### Screw positions
 
