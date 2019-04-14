@@ -2,10 +2,6 @@
 
 ## Working
 
-### Screw positions
-
-Draw all the mounting screw positions, used or not
-
 ### LEDS
 
 Who does not like LEDs ?
@@ -29,19 +25,14 @@ For touch button:
 - Touch button with ESP32's capabilities or a dedicated IC like AT42QT1010 ?
 - The electrode ?
 
-### ATSHA
+### CryptoAuthentication
 
-Put an ATSHA IC on the bottom of the board.
+Put a CryptoAuthentication device on the bottom of the board.
+See https://www.microchip.com/design-centers/security-ics/cryptoauthentication for options.
 
 ### Expansion
 
 Add a header for some available pins.
-
-### Power connector
-
-I should really use SMD pads for power pins so I can insulate those easily after soldering.
-
-Should I use a panel mounted power connector or just a hole to pass the cable through ?
 
 ### USART2
 
@@ -66,16 +57,31 @@ After buying the cases measure the front panel, design a custom one and make it 
 
 I have decided not to use one, ESP32 module is enough.
 
-- Use a general purpose microcontroller ?
-- STM32, ATSAM, ATMEGA32U4 ?
+- *Use a general purpose microcontroller ?*
+- *STM32, ATSAM, ATMEGA32U4, PIC with USB ?*
 
 ### USB
 
 After a lot of thinking I have decided to not use USB. Programming should be done using OTA firmware update.
 
-- use the USB programming module with the USB - USART IC and the two transistors ?
-- use a microcontroller as USB - USART convertor and emulation of the two transistors ?
+- *use the USB programming module with the USB - USART IC and the two transistors ?*
+- *use a microcontroller as USB - USART convertor and emulation of the two transistors ?*
 
 ## I2C Connector
 
-Add a second I2C connecter because one will be used for the OLED display.
+Done
+*Add a second I2C connecter because one will be used for the OLED display.*
+
+### Power connector
+
+Done
+*I should really use SMD pads for power pins so I can insulate those easily after soldering.*
+
+No because the height of the three pins AC connectors is 20 mm so those may be too big to be used
+*Should I use a panel mounted power connector or just a hole to pass the cable through ?*
+
+### Screw positions
+
+Done
+*Draw all the mounting screw positions, used or not*
+

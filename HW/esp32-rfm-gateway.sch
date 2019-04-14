@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-13"
-Rev "17"
+Date "2019-04-14"
+Rev "18"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1598,7 +1598,7 @@ U 1 1 5CAC2EE6
 P 1050 6850
 F 0 "J20" V 1150 6850 60  0000 C CNN
 F 1 "220V~" H 1050 6650 50  0000 C CNN
-F 2 "CalinConnectors:DG301-5-3" H 1050 6950 60  0001 C CNN
+F 2 "CalinConnectors:SMD_Pins_Big_1x3" H 1050 6950 60  0001 C CNN
 F 3 "" H 1050 6950 60  0000 C CNN
 	1    1050 6850
 	-1   0    0    1   
@@ -1877,7 +1877,7 @@ U 1 1 5CB7E46D
 P 1750 7100
 F 0 "H5" H 1750 7200 60  0000 C CNN
 F 1 "HolePlated" H 1750 7000 60  0001 C CNN
-F 2 "CalinGeneric:HolePlated-M2.5" H 1750 7100 60  0001 C CNN
+F 2 "CalinConnectors:SMD_Pins_Big_1x1" H 1750 7100 60  0001 C CNN
 F 3 "" H 1750 7100 60  0000 C CNN
 	1    1750 7100
 	0    -1   -1   0   
