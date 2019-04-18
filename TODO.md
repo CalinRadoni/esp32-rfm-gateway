@@ -2,14 +2,9 @@
 
 ## Working
 
-### USART2
-
-Add a header for USART2.
-A connector on the back would be usefull ?
-
-For a redundant configuration USART2 can be used as synchronization bus.
-
 ### LEDS
+
+PCA9633 LED driver ?
 
 Who does not like LEDs ?
 
@@ -21,17 +16,6 @@ Probably, use three or four white or green LEDs with light pipes and a shift reg
 
 How about an internal LED on the 5V rail ? Why ?
 
-### Buttons
-
-One button would be handy and enough.
-
-- Should I use a panel mounted button or a touch one ?
-
-For touch button:
-
-- Touch button with ESP32's capabilities or a dedicated IC like AT42QT1010 ?
-- The electrode ?
-
 ### Expansion
 
 Add a header for some available pins.
@@ -40,12 +24,33 @@ Add a header for some available pins.
 
 After buying the cases measure the front panel, design a custom one and make it to a fablab.
 
+## For future
+
+- Panel mount connector for USART2
+- PCB mounted buttons on the back
+
 ## Solved
+
+### USART2
+
+Done, for a redundant configuration USART2 can be used as synchronization bus.
+*Add a header for USART2.*
 
 ### CryptoAuthentication
 
 Done, placed a CryptoAuthentication compatible with ATSHA204A, ATECC508A and ATECC608A device.
 *Put a CryptoAuthentication device on the bottom of the board.*
+
+### Buttons
+
+Done, placed a header on the back for panel mounted buttons
+
+*One button would be handy and enough.*
+*Should I use a panel mounted button or a touch one ?*
+*For touch button:*
+
+- *Touch button with ESP32's capabilities or a dedicated IC like AT42QT1010 ?*
+- *The electrode ?*
 
 ### General purpose microcontroller
 
