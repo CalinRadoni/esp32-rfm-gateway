@@ -1,0 +1,365 @@
+EESchema Schematic File Version 4
+LIBS:esp32-rfm-gateway-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "ESP32 RFM69/RFM9x Gateway"
+Date "2019-04-21"
+Rev "26"
+Comp "Calin Radoni"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L calin:AT_CryptoAuth U?
+U 1 1 5CCB0E97
+P 2100 3450
+AR Path="/5CCB0E97" Ref="U?"  Part="1" 
+AR Path="/5CCB086C/5CCB0E97" Ref="U40"  Part="1" 
+F 0 "U40" H 2100 3825 50  0000 C CNN
+F 1 "AT_CryptoAuth" H 2100 3734 50  0000 C CNN
+F 2 "CalinGeneric:SOIC-8-HS" H 2100 3450 50  0001 C CNN
+F 3 "" H 2100 3450 50  0001 C CNN
+	1    2100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CCB0E9E
+P 1400 3450
+AR Path="/5CCB0E9E" Ref="C?"  Part="1" 
+AR Path="/5CCB086C/5CCB0E9E" Ref="C40"  Part="1" 
+F 0 "C40" H 1425 3550 50  0000 L CNN
+F 1 "100nF" V 1450 3150 50  0000 L CNN
+F 2 "CalinGeneric:C0805HS" H 1438 3300 50  0001 C CNN
+F 3 "" H 1400 3450 50  0000 C CNN
+	1    1400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CCB0EA5
+P 2500 3200
+AR Path="/5CCB0EA5" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CCB0EA5" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 2500 3050 50  0001 C CNN
+F 1 "+3V3" H 2500 3340 50  0000 C CNN
+F 2 "" H 2500 3200 50  0000 C CNN
+F 3 "" H 2500 3200 50  0000 C CNN
+	1    2500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CCB0EAB
+P 1400 3200
+AR Path="/5CCB0EAB" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CCB0EAB" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 1400 3050 50  0001 C CNN
+F 1 "+3V3" H 1400 3340 50  0000 C CNN
+F 2 "" H 1400 3200 50  0000 C CNN
+F 3 "" H 1400 3200 50  0000 C CNN
+	1    1400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CCB0EB1
+P 1400 3700
+AR Path="/5CCB0EB1" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CCB0EB1" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 1400 3450 50  0001 C CNN
+F 1 "GND" H 1400 3550 50  0000 C CNN
+F 2 "" H 1400 3700 50  0000 C CNN
+F 3 "" H 1400 3700 50  0000 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3200 1400 3300
+Wire Wire Line
+	1400 3600 1400 3700
+Wire Wire Line
+	2500 3200 2500 3300
+Wire Wire Line
+	2500 3300 2400 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5CCB0EBB
+P 1700 3700
+AR Path="/5CCB0EBB" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CCB0EBB" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 1700 3450 50  0001 C CNN
+F 1 "GND" H 1700 3550 50  0000 C CNN
+F 2 "" H 1700 3700 50  0000 C CNN
+F 3 "" H 1700 3700 50  0000 C CNN
+	1    1700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3600 1700 3600
+Wire Wire Line
+	1700 3600 1700 3700
+Wire Wire Line
+	2400 3500 2800 3500
+Wire Wire Line
+	2400 3600 2800 3600
+Text Label 2550 3500 0    50   ~ 0
+SCL
+Text Label 2550 3600 0    50   ~ 0
+SDA
+Text Label 1750 1200 0    50   ~ 0
+SDA
+Text Label 1750 1400 0    50   ~ 0
+SCL
+Wire Wire Line
+	1500 1200 2000 1200
+Wire Wire Line
+	1500 1400 2000 1400
+Text Notes 1500 4400 0    50   Italic 0
+AT_CryptoAuth is a placeholder\ncompatible with:\n- ATSHA204A\n- ATECC508A\n- ATECC608A
+Text HLabel 1500 1200 0    50   UnSpc ~ 0
+SDA
+Text HLabel 1500 1400 0    50   UnSpc ~ 0
+SCL
+$Comp
+L calin:LED D?
+U 1 1 5CBFAF05
+P 8900 1200
+AR Path="/5CBFAF05" Ref="D?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF05" Ref="D10"  Part="1" 
+F 0 "D10" H 8900 1300 40  0000 C CNN
+F 1 "LED" H 9050 1150 50  0000 C CNN
+F 2 "CalinGeneric:LED0805HS" H 8900 1200 50  0001 C CNN
+F 3 "" H 8900 1200 50  0001 C CNN
+	1    8900 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L calin:R R?
+U 1 1 5CBFAF0C
+P 8500 1200
+AR Path="/5CBFAF0C" Ref="R?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF0C" Ref="R10"  Part="1" 
+F 0 "R10" V 8580 1200 40  0000 C CNN
+F 1 "100" V 8500 1200 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 8430 1200 30  0001 C CNN
+F 3 "" H 8500 1200 30  0000 C CNN
+	1    8500 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 1200 7900 1200
+Wire Wire Line
+	8650 1200 8750 1200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CBFAF15
+P 9150 1200
+AR Path="/5CBFAF15" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF15" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 9150 1050 50  0001 C CNN
+F 1 "+3V3" V 9150 1400 50  0000 C CNN
+F 2 "" H 9150 1200 50  0000 C CNN
+F 3 "" H 9150 1200 50  0000 C CNN
+	1    9150 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 1200 9150 1200
+$Comp
+L calin:LED D?
+U 1 1 5CBFAF1C
+P 8900 1500
+AR Path="/5CBFAF1C" Ref="D?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF1C" Ref="D11"  Part="1" 
+F 0 "D11" H 8900 1600 40  0000 C CNN
+F 1 "LED" H 9050 1450 50  0000 C CNN
+F 2 "CalinGeneric:LED0805HS" H 8900 1500 50  0001 C CNN
+F 3 "" H 8900 1500 50  0001 C CNN
+	1    8900 1500
+	1    0    0    1   
+$EndComp
+$Comp
+L calin:R R?
+U 1 1 5CBFAF23
+P 8500 1500
+AR Path="/5CBFAF23" Ref="R?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF23" Ref="R11"  Part="1" 
+F 0 "R11" V 8580 1500 40  0000 C CNN
+F 1 "100" V 8500 1500 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 8430 1500 30  0001 C CNN
+F 3 "" H 8500 1500 30  0000 C CNN
+	1    8500 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 1500 7900 1500
+Wire Wire Line
+	8650 1500 8750 1500
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CBFAF2C
+P 9150 1500
+AR Path="/5CBFAF2C" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF2C" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 9150 1350 50  0001 C CNN
+F 1 "+3V3" V 9150 1700 50  0000 C CNN
+F 2 "" H 9150 1500 50  0000 C CNN
+F 3 "" H 9150 1500 50  0000 C CNN
+	1    9150 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 1500 9150 1500
+$Comp
+L calin:LED D?
+U 1 1 5CBFAF33
+P 8900 1800
+AR Path="/5CBFAF33" Ref="D?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF33" Ref="D12"  Part="1" 
+F 0 "D12" H 8900 1900 40  0000 C CNN
+F 1 "LED" H 9050 1750 50  0000 C CNN
+F 2 "CalinGeneric:LED0805HS" H 8900 1800 50  0001 C CNN
+F 3 "" H 8900 1800 50  0001 C CNN
+	1    8900 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L calin:R R?
+U 1 1 5CBFAF3A
+P 8500 1800
+AR Path="/5CBFAF3A" Ref="R?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF3A" Ref="R12"  Part="1" 
+F 0 "R12" V 8580 1800 40  0000 C CNN
+F 1 "100" V 8500 1800 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 8430 1800 30  0001 C CNN
+F 3 "" H 8500 1800 30  0000 C CNN
+	1    8500 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 1800 7900 1800
+Wire Wire Line
+	8650 1800 8750 1800
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CBFAF43
+P 9150 1800
+AR Path="/5CBFAF43" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF43" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 9150 1650 50  0001 C CNN
+F 1 "+3V3" V 9150 2000 50  0000 C CNN
+F 2 "" H 9150 1800 50  0000 C CNN
+F 3 "" H 9150 1800 50  0000 C CNN
+	1    9150 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 1800 9150 1800
+$Comp
+L calin:LED D?
+U 1 1 5CBFAF4A
+P 8900 2100
+AR Path="/5CBFAF4A" Ref="D?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF4A" Ref="D13"  Part="1" 
+F 0 "D13" H 8900 2200 40  0000 C CNN
+F 1 "LED" H 9050 2050 50  0000 C CNN
+F 2 "CalinGeneric:LED0805HS" H 8900 2100 50  0001 C CNN
+F 3 "" H 8900 2100 50  0001 C CNN
+	1    8900 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L calin:R R?
+U 1 1 5CBFAF51
+P 8500 2100
+AR Path="/5CBFAF51" Ref="R?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF51" Ref="R13"  Part="1" 
+F 0 "R13" V 8580 2100 40  0000 C CNN
+F 1 "100" V 8500 2100 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 8430 2100 30  0001 C CNN
+F 3 "" H 8500 2100 30  0000 C CNN
+	1    8500 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 2100 7900 2100
+Wire Wire Line
+	8650 2100 8750 2100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CBFAF5A
+P 9150 2100
+AR Path="/5CBFAF5A" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF5A" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 9150 1950 50  0001 C CNN
+F 1 "+3V3" V 9150 2300 50  0000 C CNN
+F 2 "" H 9150 2100 50  0000 C CNN
+F 3 "" H 9150 2100 50  0000 C CNN
+	1    9150 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 2100 9150 2100
+$Comp
+L calin:Symbol_Generic SYM?
+U 1 1 5CBFAF61
+P 9800 1200
+AR Path="/5CBFAF61" Ref="SYM?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF61" Ref="SYM10"  Part="1" 
+F 0 "SYM10" H 9950 1200 50  0001 C CNN
+F 1 "LightPipe" H 9878 1200 50  0000 L CNN
+F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 1200 50  0001 C CNN
+F 3 "" V 9800 1200 50  0001 C CNN
+	1    9800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:Symbol_Generic SYM?
+U 1 1 5CBFAF67
+P 9800 1500
+AR Path="/5CBFAF67" Ref="SYM?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF67" Ref="SYM11"  Part="1" 
+F 0 "SYM11" H 9950 1500 50  0001 C CNN
+F 1 "LightPipe" H 9878 1500 50  0000 L CNN
+F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 1500 50  0001 C CNN
+F 3 "" V 9800 1500 50  0001 C CNN
+	1    9800 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:Symbol_Generic SYM?
+U 1 1 5CBFAF6D
+P 9800 1800
+AR Path="/5CBFAF6D" Ref="SYM?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF6D" Ref="SYM12"  Part="1" 
+F 0 "SYM12" H 9950 1800 50  0001 C CNN
+F 1 "LightPipe" H 9878 1800 50  0000 L CNN
+F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 1800 50  0001 C CNN
+F 3 "" V 9800 1800 50  0001 C CNN
+	1    9800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:Symbol_Generic SYM?
+U 1 1 5CBFAF73
+P 9800 2100
+AR Path="/5CBFAF73" Ref="SYM?"  Part="1" 
+AR Path="/5CCB086C/5CBFAF73" Ref="SYM13"  Part="1" 
+F 0 "SYM13" H 9950 2100 50  0001 C CNN
+F 1 "LightPipe" H 9878 2100 50  0000 L CNN
+F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 2100 50  0001 C CNN
+F 3 "" V 9800 2100 50  0001 C CNN
+	1    9800 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7900 1200
+NoConn ~ 7900 1500
+NoConn ~ 7900 1800
+NoConn ~ 7900 2100
+$EndSCHEMATC
