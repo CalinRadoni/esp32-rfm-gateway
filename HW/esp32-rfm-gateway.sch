@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-22"
-Rev "27"
+Rev "28"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1109,12 +1109,14 @@ Wire Wire Line
 	5650 4950 4850 4950
 Connection ~ 5650 4950
 $Sheet
-S 8600 4600 1600 450 
+S 8600 4600 1600 850 
 U 5CCB086C
 F0 "Additional Modules" 50
 F1 "AdditionalModules.sch" 50
 F2 "SDA" U L 8600 4750 50 
 F3 "SCL" U L 8600 4900 50 
+F4 "ESP-EN" U L 8600 5150 50 
+F5 "ESP-Boot" U L 8600 5300 50 
 $EndSheet
 Text Label 8150 4750 0    50   ~ 0
 SDA
@@ -1138,4 +1140,12 @@ Wire Wire Line
 	8600 4750 8100 4750
 Wire Wire Line
 	8600 4900 8100 4900
+Wire Wire Line
+	8600 5150 8100 5150
+Wire Wire Line
+	8600 5300 8100 5300
+Text Label 8150 5300 0    50   ~ 0
+Boot
+Text Label 8150 5150 0    50   ~ 0
+Reset
 $EndSCHEMATC

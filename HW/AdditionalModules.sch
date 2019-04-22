@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 3 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-22"
-Rev "27"
+Rev "28"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -362,4 +362,127 @@ NoConn ~ 7900 1200
 NoConn ~ 7900 1500
 NoConn ~ 7900 1800
 NoConn ~ 7900 2100
+$Comp
+L calin:CS_2 J40
+U 1 1 5CC0953E
+P 3950 3450
+F 0 "J40" V 3850 3450 60  0000 C CNN
+F 1 "ph_1x2" V 4050 3450 50  0000 C CNN
+F 2 "CalinConnectors:Pin_Header_Straight_1x02" H 3950 3500 60  0001 C CNN
+F 3 "" H 3950 3500 60  0000 C CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:R R?
+U 1 1 5CC095F4
+P 4650 3150
+AR Path="/5CC095F4" Ref="R?"  Part="1" 
+AR Path="/5CCB086C/5CC095F4" Ref="R40"  Part="1" 
+F 0 "R40" V 4730 3150 40  0000 C CNN
+F 1 "10K" V 4650 3150 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 4580 3150 30  0001 C CNN
+F 3 "" H 4650 3150 30  0000 C CNN
+	1    4650 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L calin:R R?
+U 1 1 5CC096FF
+P 4650 3750
+AR Path="/5CC096FF" Ref="R?"  Part="1" 
+AR Path="/5CCB086C/5CC096FF" Ref="R41"  Part="1" 
+F 0 "R41" V 4730 3750 40  0000 C CNN
+F 1 "10K" V 4650 3750 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 4580 3750 30  0001 C CNN
+F 3 "" H 4650 3750 30  0000 C CNN
+	1    4650 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q40
+U 1 1 5CC09CBF
+P 5100 3150
+F 0 "Q40" H 5291 3196 50  0000 L CNN
+F 1 "BC817" H 5291 3105 50  0000 L CNN
+F 2 "CalinGeneric:SOT-23" H 5300 3075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5100 3150 50  0001 L CNN
+	1    5100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q41
+U 1 1 5CC09D1F
+P 5100 3750
+F 0 "Q41" H 5291 3704 50  0000 L CNN
+F 1 "BC817" H 5291 3795 50  0000 L CNN
+F 2 "CalinGeneric:SOT-23" H 5300 3675 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 5100 3750 50  0001 L CNN
+	1    5100 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4900 3150 4800 3150
+Wire Wire Line
+	4900 3750 4800 3750
+Wire Wire Line
+	4500 3150 4400 3150
+Wire Wire Line
+	3950 3150 3950 3250
+Wire Wire Line
+	4500 3750 4400 3750
+Wire Wire Line
+	3950 3750 3950 3650
+Wire Wire Line
+	5200 3550 5200 3500
+Wire Wire Line
+	5200 3500 4650 3500
+Wire Wire Line
+	4650 3500 4400 3250
+Wire Wire Line
+	4400 3250 4400 3150
+Connection ~ 4400 3150
+Wire Wire Line
+	4400 3150 3950 3150
+Wire Wire Line
+	5200 3350 5200 3400
+Wire Wire Line
+	5200 3400 4650 3400
+Wire Wire Line
+	4650 3400 4400 3650
+Wire Wire Line
+	4400 3650 4400 3750
+Connection ~ 4400 3750
+Wire Wire Line
+	4400 3750 3950 3750
+Text Label 4100 3150 0    50   ~ 0
+DTR
+Text Label 4100 3750 0    50   ~ 0
+RTS
+Wire Wire Line
+	5200 2950 5200 2900
+Wire Wire Line
+	5200 2900 5750 2900
+Wire Wire Line
+	5200 3950 5200 4000
+Wire Wire Line
+	5200 4000 5750 4000
+Text Label 5400 2900 0    50   ~ 0
+EN
+Text Label 5400 4000 0    50   ~ 0
+Boot
+Text Notes 5700 3750 0    50   ~ 0
+DTR RTS    EN Boot\n  1   1  |  x   x\n  0   0  |  x   x\n  1   0  |  0   x\n  0   1  |  x   0\n\n x = pin not driven
+Text HLabel 1500 1800 0    50   UnSpc ~ 0
+ESP-EN
+Text HLabel 1500 2000 0    50   UnSpc ~ 0
+ESP-Boot
+Wire Wire Line
+	1500 1800 2000 1800
+Wire Wire Line
+	1500 2000 2000 2000
+Text Label 1750 1800 0    50   ~ 0
+EN
+Text Label 1750 2000 0    50   ~ 0
+Boot
 $EndSCHEMATC

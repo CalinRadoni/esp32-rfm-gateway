@@ -2,10 +2,6 @@
 
 ## Roadmap
 
-### Programming
-
-Add automatic setting of Boot and EN based on DTR and RTS
-
 ### LEDS
 
 PCA9633 LED driver ?
@@ -55,6 +51,11 @@ Done, added a header n the back.
 
 For a redundant configuration USART2 can be used as synchronization bus.
 > Add a header for USART2.
+
+### Programming
+
+Done
+> Add automatic setting of Boot and EN based on DTR and RTS
 
 ### CryptoAuthentication
 
