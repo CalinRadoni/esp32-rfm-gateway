@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-21"
-Rev "26"
+Date "2019-04-22"
+Rev "27"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""

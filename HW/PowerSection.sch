@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-21"
-Rev "26"
+Date "2019-04-22"
+Rev "27"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -124,7 +124,7 @@ F 3 "" H 6800 4600 50  0001 C CNN
 	1    6800 4600
 	1    0    0    -1  
 $EndComp
-Text Label 1650 1800 0    50   ~ 0
+Text Label 1700 2200 1    50   ~ 0
 Earth
 $Comp
 L calin:HolePlated H?
@@ -243,14 +243,14 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5CC2CA8F
-P 1950 1800
+P 1800 2300
 AR Path="/5CC2CA8F" Ref="#FLG?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CA8F" Ref="#FLG0101"  Part="1" 
-F 0 "#FLG0101" H 1950 1875 50  0001 C CNN
-F 1 "PWR_FLAG" V 1900 1900 20  0000 C CNN
-F 2 "" H 1950 1800 50  0001 C CNN
-F 3 "~" H 1950 1800 50  0001 C CNN
-	1    1950 1800
+F 0 "#FLG0101" H 1800 2375 50  0001 C CNN
+F 1 "PWR_FLAG" V 1750 2400 20  0000 C CNN
+F 2 "" H 1800 2300 50  0001 C CNN
+F 3 "~" H 1800 2300 50  0001 C CNN
+	1    1800 2300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -354,22 +354,20 @@ $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 5CC2CAC9
-P 1900 2400
+P 1700 2400
 AR Path="/5CC2CAC9" Ref="#PWR?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CAC9" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR0112" H 1900 2150 50  0001 C CNN
-F 1 "Earth" H 1900 2250 50  0001 C CNN
-F 2 "" H 1900 2400 50  0001 C CNN
-F 3 "~" H 1900 2400 50  0001 C CNN
-	1    1900 2400
+F 0 "#PWR0112" H 1700 2150 50  0001 C CNN
+F 1 "Earth" H 1700 2250 50  0001 C CNN
+F 2 "" H 1700 2400 50  0001 C CNN
+F 3 "~" H 1700 2400 50  0001 C CNN
+	1    1700 2400
 	1    0    0    -1  
 $EndComp
-Text Label 1700 1900 0    50   ~ 0
+Text Label 1850 1900 0    50   ~ 0
 ACN
-Text Label 1700 1700 0    50   ~ 0
+Text Label 1850 1700 0    50   ~ 0
 ACL
-Wire Wire Line
-	1600 1900 2050 1900
 Wire Wire Line
 	1600 1700 2050 1700
 $Comp
@@ -380,7 +378,7 @@ AR Path="/5CC2CAD7" Ref="J?"  Part="1"
 AR Path="/5CBFFED5/5CC2CAD7" Ref="J20"  Part="1" 
 F 0 "J20" V 1550 1800 60  0000 C CNN
 F 1 "220V~" H 1450 1600 50  0000 C CNN
-F 2 "CalinConnectors:SMD_Pins_Big_1x3" H 1450 1900 60  0001 C CNN
+F 2 "CalinConnectors:THT_Pins_Big_1x3" H 1450 1900 60  0001 C CNN
 F 3 "" H 1450 1900 60  0000 C CNN
 	1    1450 1800
 	-1   0    0    1   
@@ -1203,17 +1201,7 @@ ScaledBatteryVoltage
 Text HLabel 9650 4600 2    50   UnSpc ~ 0
 ChargeStatus
 Wire Wire Line
-	1600 1800 1900 1800
-Wire Wire Line
-	1900 1800 1900 2300
-Wire Wire Line
-	1600 2300 1900 2300
-Connection ~ 1900 2300
-Wire Wire Line
-	1900 2300 1900 2400
-Wire Wire Line
-	1950 1800 1900 1800
-Connection ~ 1900 1800
+	1600 2300 1700 2300
 Wire Notes Line width 20 style dotted
 	5000 3100 900  3100
 Wire Notes Line width 20 style dotted
@@ -1232,4 +1220,19 @@ Text Notes 3000 6200 0    50   Italic 0
 J22 and J23 are placeholders for a 14500 size\nand a 18650 size battery sockets, respectively.\nOnly one of them can be mounted and used.
 Text Notes 1050 2750 0    50   Italic 0
 H5 is for a Earth connection, if ever needed,\nAND to make a connection for Earth plane in PCB
+Wire Wire Line
+	1600 1900 1700 1900
+Wire Wire Line
+	1700 1900 1700 2300
+Wire Wire Line
+	1600 1800 1800 1800
+Wire Wire Line
+	1800 1800 1800 1900
+Wire Wire Line
+	1800 1900 2050 1900
+Wire Wire Line
+	1800 2300 1700 2300
+Connection ~ 1700 2300
+Wire Wire Line
+	1700 2400 1700 2300
 $EndSCHEMATC

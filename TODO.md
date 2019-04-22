@@ -2,6 +2,10 @@
 
 ## Roadmap
 
+### Programming
+
+Add automatic setting of Boot and EN based on DTR and RTS
+
 ### LEDS
 
 PCA9633 LED driver ?
@@ -90,6 +94,12 @@ Done
 ### Power connector
 
 Done
+> Change the Earth zone and connections to be OK even without Earth connected
+
+Done, changed to through-hole pads on a 5mm grid
+> Change the high voltage connection to either a "standard, screw-less" one or to THT pins !
+
+Done, but later changed to THT pads on a 5mm grid
 > I should really use SMD pads for power pins so I can insulate those easily after soldering.
 
 No, because the height of the three pins AC connectors is 20 mm so those may be too big to be used
