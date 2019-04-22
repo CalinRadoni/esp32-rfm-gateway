@@ -2,24 +2,13 @@
 
 ## Roadmap
 
-### LEDS
-
-PCA9633 LED driver ?
-
-Who does not like LEDs ?
-
-- use LEDs ? how many ? what types, sizes, colors ?
-
-I have found light pipes but are not big enough for 5mm LEDs like WS2812* ones.
-
-Probably, use three or four white or green LEDs with light pipes and a shift register to light them.
+### Power LED
 
 How about an internal LED on the 5V rail ? Why ?
 
 ### Expansion
 
 Add a header for some available pins.
-This task depends of the decision regarding the LEDs to see what pins will be free !
 
 ### Front panel
 
@@ -40,6 +29,14 @@ Use FreeCAD to build 3D packages:
 - SMA connector
 
 ## Solved, done or dropped
+
+### LEDs and drivers
+
+Done, here are the selections I have made:
+
+- PCA9633 as LED driver
+- 4 LEDs (white, green, ...) + 4 resistors
+- light pipes
 
 ### 3D Packages status
 
