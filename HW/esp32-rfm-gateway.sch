@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-22"
-Rev "29"
+Rev "30"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""

@@ -2,6 +2,10 @@
 
 ## Roadmap
 
+### Sensors
+
+Temperature + humidity sensor ?
+
 ### Power LED
 
 How about an internal LED on the 5V rail ? Why ?

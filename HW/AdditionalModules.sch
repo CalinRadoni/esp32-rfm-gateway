@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 3 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-04-22"
-Rev "29"
+Rev "30"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -17,100 +17,100 @@ $EndDescr
 $Comp
 L calin:AT_CryptoAuth U?
 U 1 1 5CCB0E97
-P 7650 3450
+P 2200 4450
 AR Path="/5CCB0E97" Ref="U?"  Part="1" 
 AR Path="/5CCB086C/5CCB0E97" Ref="U40"  Part="1" 
-F 0 "U40" H 7650 3825 50  0000 C CNN
-F 1 "AT_CryptoAuth" H 7650 3734 50  0000 C CNN
-F 2 "CalinGeneric:SOIC-8-HS" H 7650 3450 50  0001 C CNN
-F 3 "" H 7650 3450 50  0001 C CNN
-	1    7650 3450
+F 0 "U40" H 2200 4700 50  0000 C CNN
+F 1 "AT_CryptoAuth" H 2200 4200 50  0000 C CNN
+F 2 "CalinGeneric:SOIC-8-HS" H 2200 4450 50  0001 C CNN
+F 3 "" H 2200 4450 50  0001 C CNN
+	1    2200 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CCB0E9E
-P 6850 3450
+P 1350 4450
 AR Path="/5CCB0E9E" Ref="C?"  Part="1" 
 AR Path="/5CCB086C/5CCB0E9E" Ref="C40"  Part="1" 
-F 0 "C40" H 6875 3550 50  0000 L CNN
-F 1 "100nF" V 6900 3150 50  0000 L CNN
-F 2 "CalinGeneric:C0805HS" H 6888 3300 50  0001 C CNN
-F 3 "" H 6850 3450 50  0000 C CNN
-	1    6850 3450
+F 0 "C40" H 1375 4550 50  0000 L CNN
+F 1 "100nF" V 1400 4150 50  0000 L CNN
+F 2 "CalinGeneric:C0805HS" H 1388 4300 50  0001 C CNN
+F 3 "" H 1350 4450 50  0000 C CNN
+	1    1350 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5CCB0EA5
-P 8050 3200
+P 2600 4200
 AR Path="/5CCB0EA5" Ref="#PWR?"  Part="1" 
 AR Path="/5CCB086C/5CCB0EA5" Ref="#PWR0159"  Part="1" 
-F 0 "#PWR0159" H 8050 3050 50  0001 C CNN
-F 1 "+3V3" H 8050 3340 50  0000 C CNN
-F 2 "" H 8050 3200 50  0000 C CNN
-F 3 "" H 8050 3200 50  0000 C CNN
-	1    8050 3200
+F 0 "#PWR0159" H 2600 4050 50  0001 C CNN
+F 1 "+3V3" H 2600 4340 50  0000 C CNN
+F 2 "" H 2600 4200 50  0000 C CNN
+F 3 "" H 2600 4200 50  0000 C CNN
+	1    2600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5CCB0EAB
-P 6850 3200
+P 1350 4200
 AR Path="/5CCB0EAB" Ref="#PWR?"  Part="1" 
 AR Path="/5CCB086C/5CCB0EAB" Ref="#PWR0160"  Part="1" 
-F 0 "#PWR0160" H 6850 3050 50  0001 C CNN
-F 1 "+3V3" H 6850 3340 50  0000 C CNN
-F 2 "" H 6850 3200 50  0000 C CNN
-F 3 "" H 6850 3200 50  0000 C CNN
-	1    6850 3200
+F 0 "#PWR0160" H 1350 4050 50  0001 C CNN
+F 1 "+3V3" H 1350 4340 50  0000 C CNN
+F 2 "" H 1350 4200 50  0000 C CNN
+F 3 "" H 1350 4200 50  0000 C CNN
+	1    1350 4200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CCB0EB1
-P 6850 3700
+P 1350 4700
 AR Path="/5CCB0EB1" Ref="#PWR?"  Part="1" 
 AR Path="/5CCB086C/5CCB0EB1" Ref="#PWR0161"  Part="1" 
-F 0 "#PWR0161" H 6850 3450 50  0001 C CNN
-F 1 "GND" H 6850 3550 50  0000 C CNN
-F 2 "" H 6850 3700 50  0000 C CNN
-F 3 "" H 6850 3700 50  0000 C CNN
-	1    6850 3700
+F 0 "#PWR0161" H 1350 4450 50  0001 C CNN
+F 1 "GND" H 1350 4550 50  0000 C CNN
+F 2 "" H 1350 4700 50  0000 C CNN
+F 3 "" H 1350 4700 50  0000 C CNN
+	1    1350 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 3200 6850 3300
+	1350 4200 1350 4300
 Wire Wire Line
-	6850 3600 6850 3700
+	1350 4600 1350 4700
 Wire Wire Line
-	8050 3200 8050 3300
+	2600 4200 2600 4300
 Wire Wire Line
-	8050 3300 7950 3300
+	2600 4300 2500 4300
 $Comp
 L power:GND #PWR?
 U 1 1 5CCB0EBB
-P 7250 3700
+P 1800 4700
 AR Path="/5CCB0EBB" Ref="#PWR?"  Part="1" 
 AR Path="/5CCB086C/5CCB0EBB" Ref="#PWR0162"  Part="1" 
-F 0 "#PWR0162" H 7250 3450 50  0001 C CNN
-F 1 "GND" H 7250 3550 50  0000 C CNN
-F 2 "" H 7250 3700 50  0000 C CNN
-F 3 "" H 7250 3700 50  0000 C CNN
-	1    7250 3700
+F 0 "#PWR0162" H 1800 4450 50  0001 C CNN
+F 1 "GND" H 1800 4550 50  0000 C CNN
+F 2 "" H 1800 4700 50  0000 C CNN
+F 3 "" H 1800 4700 50  0000 C CNN
+	1    1800 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 3600 7250 3600
+	1900 4600 1800 4600
 Wire Wire Line
-	7250 3600 7250 3700
+	1800 4600 1800 4700
 Wire Wire Line
-	7950 3500 8350 3500
+	2500 4500 2900 4500
 Wire Wire Line
-	7950 3600 8350 3600
-Text Label 8100 3500 0    50   ~ 0
+	2500 4600 2900 4600
+Text Label 2650 4500 0    50   ~ 0
 SCL
-Text Label 8100 3600 0    50   ~ 0
+Text Label 2650 4600 0    50   ~ 0
 SDA
 Text Label 1750 1200 0    50   ~ 0
 SDA
@@ -120,7 +120,7 @@ Wire Wire Line
 	1500 1200 2000 1200
 Wire Wire Line
 	1500 1400 2000 1400
-Text Notes 8650 3600 0    50   Italic 0
+Text Notes 3150 4600 0    50   Italic 0
 AT_CryptoAuth is a placeholder compatible with:\n- ATSHA204A\n- ATECC508A\n- ATECC608A
 Text HLabel 1500 1200 0    50   UnSpc ~ 0
 SDA
@@ -353,105 +353,105 @@ $EndComp
 $Comp
 L calin:CS_2 J40
 U 1 1 5CC0953E
-P 1700 3450
-F 0 "J40" V 1600 3450 60  0000 C CNN
-F 1 "ph_1x2" V 1800 3450 50  0000 C CNN
-F 2 "CalinConnectors:Pin_Header_Straight_1x02" H 1700 3500 60  0001 C CNN
-F 3 "" H 1700 3500 60  0000 C CNN
-	1    1700 3450
+P 1500 6550
+F 0 "J40" V 1400 6550 60  0000 C CNN
+F 1 "ph_1x2" V 1600 6550 50  0000 C CNN
+F 2 "CalinConnectors:Pin_Header_Straight_1x02" H 1500 6600 60  0001 C CNN
+F 3 "" H 1500 6600 60  0000 C CNN
+	1    1500 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L calin:R R?
 U 1 1 5CC095F4
-P 2400 3150
+P 2200 6250
 AR Path="/5CC095F4" Ref="R?"  Part="1" 
 AR Path="/5CCB086C/5CC095F4" Ref="R40"  Part="1" 
-F 0 "R40" V 2480 3150 40  0000 C CNN
-F 1 "10K" V 2400 3150 40  0000 C CNN
-F 2 "CalinGeneric:R0805HS" V 2330 3150 30  0001 C CNN
-F 3 "" H 2400 3150 30  0000 C CNN
-	1    2400 3150
+F 0 "R40" V 2280 6250 40  0000 C CNN
+F 1 "10K" V 2200 6250 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 2130 6250 30  0001 C CNN
+F 3 "" H 2200 6250 30  0000 C CNN
+	1    2200 6250
 	0    1    1    0   
 $EndComp
 $Comp
 L calin:R R?
 U 1 1 5CC096FF
-P 2400 3750
+P 2200 6850
 AR Path="/5CC096FF" Ref="R?"  Part="1" 
 AR Path="/5CCB086C/5CC096FF" Ref="R41"  Part="1" 
-F 0 "R41" V 2480 3750 40  0000 C CNN
-F 1 "10K" V 2400 3750 40  0000 C CNN
-F 2 "CalinGeneric:R0805HS" V 2330 3750 30  0001 C CNN
-F 3 "" H 2400 3750 30  0000 C CNN
-	1    2400 3750
+F 0 "R41" V 2280 6850 40  0000 C CNN
+F 1 "10K" V 2200 6850 40  0000 C CNN
+F 2 "CalinGeneric:R0805HS" V 2130 6850 30  0001 C CNN
+F 3 "" H 2200 6850 30  0000 C CNN
+	1    2200 6850
 	0    1    1    0   
 $EndComp
 $Comp
 L Transistor_BJT:BC817 Q40
 U 1 1 5CC09CBF
-P 2850 3150
-F 0 "Q40" H 3041 3196 50  0000 L CNN
-F 1 "BC817" H 3041 3105 50  0000 L CNN
-F 2 "CalinGeneric:SOT-23" H 3050 3075 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2850 3150 50  0001 L CNN
-	1    2850 3150
+P 2650 6250
+F 0 "Q40" H 2841 6296 50  0000 L CNN
+F 1 "BC817" H 2841 6205 50  0000 L CNN
+F 2 "CalinGeneric:SOT-23" H 2850 6175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2650 6250 50  0001 L CNN
+	1    2650 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:BC817 Q41
 U 1 1 5CC09D1F
-P 2850 3750
-F 0 "Q41" H 3041 3704 50  0000 L CNN
-F 1 "BC817" H 3041 3795 50  0000 L CNN
-F 2 "CalinGeneric:SOT-23" H 3050 3675 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2850 3750 50  0001 L CNN
-	1    2850 3750
+P 2650 6850
+F 0 "Q41" H 2841 6804 50  0000 L CNN
+F 1 "BC817" H 2841 6895 50  0000 L CNN
+F 2 "CalinGeneric:SOT-23" H 2850 6775 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2650 6850 50  0001 L CNN
+	1    2650 6850
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	2650 3150 2550 3150
+	2450 6250 2350 6250
 Wire Wire Line
-	2650 3750 2550 3750
+	2450 6850 2350 6850
 Wire Wire Line
-	2250 3150 2150 3150
+	2050 6250 1950 6250
 Wire Wire Line
-	1700 3150 1700 3250
+	1500 6250 1500 6350
 Wire Wire Line
-	2250 3750 2150 3750
+	2050 6850 1950 6850
 Wire Wire Line
-	1700 3750 1700 3650
+	1500 6850 1500 6750
 Wire Wire Line
-	2950 3550 2950 3500
+	2750 6650 2750 6600
 Wire Wire Line
-	2950 3500 2400 3500
+	2750 6600 2200 6600
 Wire Wire Line
-	2400 3500 2150 3250
+	2200 6600 1950 6350
 Wire Wire Line
-	2150 3250 2150 3150
-Connection ~ 2150 3150
+	1950 6350 1950 6250
+Connection ~ 1950 6250
 Wire Wire Line
-	2150 3150 1700 3150
+	1950 6250 1500 6250
 Wire Wire Line
-	2950 3350 2950 3400
+	2750 6450 2750 6500
 Wire Wire Line
-	2950 3400 2400 3400
+	2750 6500 2200 6500
 Wire Wire Line
-	2400 3400 2150 3650
+	2200 6500 1950 6750
 Wire Wire Line
-	2150 3650 2150 3750
-Connection ~ 2150 3750
+	1950 6750 1950 6850
+Connection ~ 1950 6850
 Wire Wire Line
-	2150 3750 1700 3750
-Text Label 1850 3150 0    50   ~ 0
+	1950 6850 1500 6850
+Text Label 1650 6250 0    50   ~ 0
 DTR
-Text Label 1850 3750 0    50   ~ 0
+Text Label 1650 6850 0    50   ~ 0
 RTS
-Text Notes 3450 3750 0    50   ~ 0
+Text Notes 3250 6850 0    50   ~ 0
 DTR RTS    EN Boot\n  1   1  |  x   x\n  0   0  |  x   x\n  1   0  |  0   x\n  0   1  |  x   0\n\n x = pin not driven
-Text HLabel 3700 2900 2    50   UnSpc ~ 0
+Text HLabel 3500 6000 2    50   UnSpc ~ 0
 ESP-EN
-Text HLabel 3700 4000 2    50   UnSpc ~ 0
+Text HLabel 3500 7100 2    50   UnSpc ~ 0
 ESP-Boot
 $Comp
 L calin:PCA9633DP1 U10
@@ -574,13 +574,202 @@ SCL
 Text Label 6950 1600 0    50   ~ 0
 SDA
 Wire Wire Line
-	3700 2900 2950 2900
+	3500 6000 2750 6000
 Wire Wire Line
-	2950 2900 2950 2950
+	2750 6000 2750 6050
 Wire Wire Line
-	3700 4000 2950 4000
+	3500 7100 2750 7100
 Wire Wire Line
-	2950 4000 2950 3950
-Text Notes 7350 2500 0    50   ~ 0
-scrie adresele I2C !!!
+	2750 7100 2750 7050
+Text Notes 7700 2600 0    50   ~ 0
+I2C addresses are:\n- LED All Call is 0xE0/0xE1 (R/~W)\n- default for PCA9633DP1 is 0xC4/0xC5\n- Software Reset address is 0x06 (0x07 is invalid in this case)
+$Comp
+L calin:HIH8000_I2C U41
+U 1 1 5CBE66CD
+P 7700 5400
+F 0 "U41" H 7700 5650 60  0000 C CNN
+F 1 "HIH8000_I2C" H 7700 5150 60  0000 C CNN
+F 2 "CalinGeneric:SOIC-8-HS" H 7700 5400 60  0001 C CNN
+F 3 "" H 7700 5400 60  0000 C CNN
+	1    7700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CBEDDD9
+P 7250 5750
+AR Path="/5CBEDDD9" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBEDDD9" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 7250 5500 50  0001 C CNN
+F 1 "GND" H 7250 5600 50  0000 C CNN
+F 2 "" H 7250 5750 50  0000 C CNN
+F 3 "" H 7250 5750 50  0000 C CNN
+	1    7250 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CBEDE2C
+P 8150 5150
+AR Path="/5CBEDE2C" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBEDE2C" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 8150 5000 50  0001 C CNN
+F 1 "+3V3" H 8150 5290 50  0000 C CNN
+F 2 "" H 8150 5150 50  0000 C CNN
+F 3 "" H 8150 5150 50  0000 C CNN
+	1    8150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5150 8150 5250
+Wire Wire Line
+	8150 5250 8050 5250
+Wire Wire Line
+	7350 5350 7250 5350
+Wire Wire Line
+	7250 5350 7250 5750
+$Comp
+L Device:C C?
+U 1 1 5CBF000C
+P 6500 5500
+AR Path="/5CBF000C" Ref="C?"  Part="1" 
+AR Path="/5CCB086C/5CBF000C" Ref="C41"  Part="1" 
+F 0 "C41" H 6525 5600 50  0000 L CNN
+F 1 "100nF" V 6550 5200 50  0000 L CNN
+F 2 "CalinGeneric:C0805HS" H 6538 5350 50  0001 C CNN
+F 3 "" H 6500 5500 50  0000 C CNN
+	1    6500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CBF00B7
+P 8400 5500
+AR Path="/5CBF00B7" Ref="C?"  Part="1" 
+AR Path="/5CCB086C/5CBF00B7" Ref="C42"  Part="1" 
+F 0 "C42" H 8425 5600 50  0000 L CNN
+F 1 "100nF" V 8450 5200 50  0000 L CNN
+F 2 "CalinGeneric:C0805HS" H 8438 5350 50  0001 C CNN
+F 3 "" H 8400 5500 50  0000 C CNN
+	1    8400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5450 6800 5450
+Wire Wire Line
+	7350 5550 6800 5550
+Text Label 6950 5550 0    50   ~ 0
+SDA
+Text Label 6950 5450 0    50   ~ 0
+SCL
+$Comp
+L power:GND #PWR?
+U 1 1 5CBF25F5
+P 6500 5750
+AR Path="/5CBF25F5" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBF25F5" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 6500 5500 50  0001 C CNN
+F 1 "GND" H 6500 5600 50  0000 C CNN
+F 2 "" H 6500 5750 50  0000 C CNN
+F 3 "" H 6500 5750 50  0000 C CNN
+	1    6500 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5650 6500 5750
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CBF4B8D
+P 8400 5150
+AR Path="/5CBF4B8D" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBF4B8D" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 8400 5000 50  0001 C CNN
+F 1 "+3V3" H 8400 5290 50  0000 C CNN
+F 2 "" H 8400 5150 50  0000 C CNN
+F 3 "" H 8400 5150 50  0000 C CNN
+	1    8400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CBF4BC0
+P 8400 5750
+AR Path="/5CBF4BC0" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CBF4BC0" Ref="#PWR0175"  Part="1" 
+F 0 "#PWR0175" H 8400 5500 50  0001 C CNN
+F 1 "GND" H 8400 5600 50  0000 C CNN
+F 2 "" H 8400 5750 50  0000 C CNN
+F 3 "" H 8400 5750 50  0000 C CNN
+	1    8400 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5750 8400 5650
+Wire Wire Line
+	8400 5350 8400 5150
+NoConn ~ 8050 5450
+NoConn ~ 8050 5550
+Wire Wire Line
+	7350 5250 6500 5250
+Wire Wire Line
+	6500 5250 6500 5350
+$Comp
+L Device:C C?
+U 1 1 5CC12D9F
+P 6150 1650
+AR Path="/5CC12D9F" Ref="C?"  Part="1" 
+AR Path="/5CCB086C/5CC12D9F" Ref="C11"  Part="1" 
+F 0 "C11" H 6175 1750 50  0000 L CNN
+F 1 "1uF" V 6200 1450 50  0000 L CNN
+F 2 "CalinGeneric:C0805HS" H 6188 1500 50  0001 C CNN
+F 3 "" H 6150 1650 50  0000 C CNN
+	1    6150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CC12DA5
+P 6150 1400
+AR Path="/5CC12DA5" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CC12DA5" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 6150 1250 50  0001 C CNN
+F 1 "+3V3" H 6150 1540 50  0000 C CNN
+F 2 "" H 6150 1400 50  0000 C CNN
+F 3 "" H 6150 1400 50  0000 C CNN
+	1    6150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC12DAB
+P 6150 1900
+AR Path="/5CC12DAB" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CC12DAB" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 6150 1650 50  0001 C CNN
+F 1 "GND" H 6150 1750 50  0000 C CNN
+F 2 "" H 6150 1900 50  0000 C CNN
+F 3 "" H 6150 1900 50  0000 C CNN
+	1    6150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1400 6150 1500
+Wire Wire Line
+	6150 1800 6150 1900
+Text Notes 2200 5150 0    50   ~ 0
+Default I2C Address of:\n- ATSHA204A is 0xC8/0xC9\n- ATECC508A is 0xC0/0xC1\n- ATECC608A is 0xC4/0xC5 (probably)
+Text Notes 7700 6100 0    50   ~ 0
+Default I2C address is 0x27 (0x4E/0x4F)
+Wire Notes Line width 20 style dotted
+	5650 1100 5650 7100
+Wire Notes Line width 20 style dotted
+	1200 5450 4900 5450
+Text Notes 8850 5450 0    50   Italic 0
+Recommended value for C42 is 220nF.\nC11 (1uF) should compensate leaving C42 for filtering.
+Text Notes 6050 2950 0    50   Italic 0
+C11 should be placed close to U10 and U41
+Wire Notes Line width 20 style dotted
+	6400 4750 10450 4750
+Wire Notes Line width 20 style dotted
+	6400 3150 10450 3150
 $EndSCHEMATC
