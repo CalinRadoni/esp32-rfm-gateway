@@ -2,21 +2,15 @@
 
 ## Roadmap
 
-### Sensors
+## TODO
 
-Temperature + humidity sensor ?
+### Component codes
 
-### Power LED
-
-How about an internal LED on the 5V rail ? Why ?
-
-### Expansion
-
-Add a header for some available pins.
+Add component codes for different sellers.
 
 ### Front panel
 
-After buying the cases measure the front panel, design a custom one and make it to a fablab.
+After buying the cases and OLED displays, measure the case's front panel, design a custom one and make it to a fablab.
 
 ## Proposals
 
@@ -34,10 +28,15 @@ Use FreeCAD to build 3D packages:
 
 ## Solved, done or dropped
 
+### Sensors
+
+Added a HIH8000 series humidity and temperature sensor.
+
 ### LEDs and drivers
 
 Done, here are the selections I have made:
 
+- LED on the 5V rail
 - PCA9633 as LED driver
 - 4 LEDs (white, green, ...) + 4 resistors
 - light pipes
@@ -46,12 +45,14 @@ Done, here are the selections I have made:
 
 Created the 3D package for the power source.
 
-### USART2
+### Headers and expansion pins
 
-Done, added a header n the back.
+Added two more I2C headers.
 
+Added a header for USART2 in the back.
 For a redundant configuration USART2 can be used as synchronization bus.
-> Add a header for USART2.
+
+Add some expansion pins.
 
 ### Programming
 
@@ -88,11 +89,6 @@ After a lot of thinking I have decided to not use USB. Programming should be don
 > - use the USB programming module with the USB - USART IC and the two transistors ?
 > - use a microcontroller as USB - USART convertor and emulation of the two transistors ?
 
-### I2C Connector
-
-Done
-> Add a second I2C connecter because one will be used for the OLED display.
-
 ### Power connector
 
 Done
@@ -114,6 +110,10 @@ Done
 
 NO, the datasheet lacks some dimensions
 > Build the 3D model for it
+
+### Labels
+
+Added labels on silkscreen
 
 ### Screw positions
 

@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-22"
-Rev "30"
+Date "2019-04-25"
+Rev "32"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -876,9 +876,6 @@ Wire Wire Line
 	6250 2900 5900 2900
 Connection ~ 5900 2900
 NoConn ~ 5900 1700
-NoConn ~ 5900 2300
-NoConn ~ 5900 2400
-NoConn ~ 5900 2500
 $Comp
 L calin:CS_5 J30
 U 1 1 5CCE7D57
@@ -945,7 +942,6 @@ Text Label 7750 1300 0    50   ~ 0
 SCL
 Text Label 7750 1400 0    50   ~ 0
 SDA
-NoConn ~ 5900 2800
 Text Label 5200 2800 0    50   ~ 0
 IO4
 Text Label 2900 2400 0    50   ~ 0
@@ -1148,4 +1144,133 @@ Text Label 8150 5300 0    50   ~ 0
 Boot
 Text Label 8150 5150 0    50   ~ 0
 Reset
+$Comp
+L calin:CS_4 J8
+U 1 1 5CC3F23B
+P 9300 1250
+F 0 "J8" H 9300 1500 60  0000 C CNN
+F 1 "ph_1x4" V 9400 1250 50  0000 C CNN
+F 2 "CalinConnectors:Pin_Header_Straight_1x04" H 9300 1400 60  0001 C CNN
+F 3 "" H 9300 1400 60  0000 C CNN
+	1    9300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0178
+U 1 1 5CC3F241
+P 9050 1200
+F 0 "#PWR0178" H 9050 950 50  0001 C CNN
+F 1 "GND" V 9050 1000 50  0000 C CNN
+F 2 "" H 9050 1200 50  0000 C CNN
+F 3 "" H 9050 1200 50  0000 C CNN
+	1    9050 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0179
+U 1 1 5CC3F247
+P 9050 1100
+F 0 "#PWR0179" H 9050 950 50  0001 C CNN
+F 1 "+3V3" V 9050 1300 50  0000 C CNN
+F 2 "" H 9050 1100 50  0000 C CNN
+F 3 "" H 9050 1100 50  0000 C CNN
+	1    9050 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9150 1100 9050 1100
+Wire Wire Line
+	9150 1200 9050 1200
+Wire Wire Line
+	9150 1300 8650 1300
+Wire Wire Line
+	9150 1400 8650 1400
+Text Label 8750 1300 0    50   ~ 0
+SCL
+Text Label 8750 1400 0    50   ~ 0
+SDA
+$Comp
+L calin:CS_1 J10
+U 1 1 5CC44237
+P 9300 1900
+F 0 "J10" H 9400 1900 60  0000 L CNN
+F 1 "CS_1" H 9600 1900 50  0000 L CNN
+F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 1900 60  0001 C CNN
+F 3 "" H 9300 1900 60  0000 C CNN
+	1    9300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:CS_1 J11
+U 1 1 5CC442FF
+P 9300 2050
+F 0 "J11" H 9400 2050 60  0000 L CNN
+F 1 "CS_1" H 9600 2050 50  0000 L CNN
+F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2050 60  0001 C CNN
+F 3 "" H 9300 2050 60  0000 C CNN
+	1    9300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:CS_1 J12
+U 1 1 5CC44353
+P 9300 2200
+F 0 "J12" H 9400 2200 60  0000 L CNN
+F 1 "CS_1" H 9600 2200 50  0000 L CNN
+F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2200 60  0001 C CNN
+F 3 "" H 9300 2200 60  0000 C CNN
+	1    9300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:CS_1 J13
+U 1 1 5CC443A9
+P 9300 2350
+F 0 "J13" H 9400 2350 60  0000 L CNN
+F 1 "CS_1" H 9600 2350 50  0000 L CNN
+F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2350 60  0001 C CNN
+F 3 "" H 9300 2350 60  0000 C CNN
+	1    9300 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:CS_1 J14
+U 1 1 5CC44401
+P 9300 2500
+F 0 "J14" H 9400 2500 60  0000 L CNN
+F 1 "CS_1" H 9600 2500 50  0000 L CNN
+F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2500 60  0001 C CNN
+F 3 "" H 9300 2500 60  0000 C CNN
+	1    9300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1900 8650 1900
+Wire Wire Line
+	9150 2050 8650 2050
+Wire Wire Line
+	9150 2200 8650 2200
+Wire Wire Line
+	9150 2500 8650 2500
+$Comp
+L power:GND #PWR0180
+U 1 1 5CC64F5B
+P 9050 2350
+F 0 "#PWR0180" H 9050 2100 50  0001 C CNN
+F 1 "GND" V 9050 2150 50  0000 C CNN
+F 2 "" H 9050 2350 50  0000 C CNN
+F 3 "" H 9050 2350 50  0000 C CNN
+	1    9050 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 2350 9050 2350
+Text Label 8750 2500 0    50   ~ 0
+IO4
+Text Label 8750 2200 0    50   ~ 0
+IO5
+Text Label 8750 2050 0    50   ~ 0
+IO18
+Text Label 8750 1900 0    50   ~ 0
+IO19
 $EndSCHEMATC
