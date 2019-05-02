@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-25"
-Rev "32"
+Date "2019-05-02"
+Rev "34"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -22,50 +22,70 @@ F 0 "R1" V 1780 1950 40  0000 C CNN
 F 1 "10k" V 1700 1950 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 1630 1950 30  0001 C CNN
 F 3 "" H 1700 1950 30  0000 C CNN
+F 4 "10k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CRCW080510K0FKEA" H 0   0   50  0001 C CNN "part-number"
 	1    1700 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L calin:C C2
 U 1 1 5B37F1B6
 P 2050 1950
 F 0 "C2" H 2075 2050 50  0000 L CNN
 F 1 "100nF" V 2100 1650 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 2088 1800 50  0001 C CNN
 F 3 "" H 2050 1950 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    2050 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L calin:C C3
 U 1 1 5B37F1EF
 P 2350 1950
 F 0 "C3" H 2375 2050 50  0000 L CNN
 F 1 "10uF" V 2400 1700 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 2388 1800 50  0001 C CNN
 F 3 "" H 2350 1950 50  0000 C CNN
+F 4 "10 µF / 6,3 V" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B106KQQNNNE" H 0   0   50  0001 C CNN "part-number"
 	1    2350 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L calin:C C1
 U 1 1 5B37F25F
 P 1700 2800
 F 0 "C1" H 1725 2900 50  0000 L CNN
 F 1 "100nF" V 1750 2500 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 1738 2650 50  0001 C CNN
 F 3 "" H 1700 2800 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    1700 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L calin:C C4
 U 1 1 5B37F59B
 P 5900 3200
-F 0 "C4" H 5950 3300 50  0000 L CNN
-F 1 "100nF" V 5950 2900 50  0000 L CNN
+F 0 "C4" V 5950 3300 50  0000 C CNN
+F 1 "100nF-NC" V 5750 3200 39  0000 C CIN
 F 2 "CalinGeneric:C0805HS" H 5938 3050 50  0001 C CNN
 F 3 "" H 5900 3200 50  0000 C CNN
+F 4 "*" H 0   0   50  0001 C CNN "characteristics"
+F 5 "*" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    5900 3200
 	1    0    0    -1  
 $EndComp
@@ -172,6 +192,10 @@ F 0 "U1" H 4200 2850 60  0000 C CNN
 F 1 "ESP-WROOM-32" V 4200 2150 60  0000 C CNN
 F 2 "CalinGeneric:ESP-WROOM-32-HandSolder" H 4200 2100 60  0001 C CNN
 F 3 "" H 4200 2100 60  0001 C CNN
+F 4 "*" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Espressif" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "*" H 0   0   50  0001 C CNN "package"
+F 7 "ESP32-WROOM-32" H 0   0   50  0001 C CNN "part-number"
 	1    4200 2250
 	1    0    0    -1  
 $EndComp
@@ -290,6 +314,8 @@ F 0 "H1" H 10328 1100 60  0000 L CNN
 F 1 "Hole" H 10350 1050 60  0001 C CNN
 F 2 "CalinGeneric:HoleNPT-M2.5" H 10250 1100 60  0001 C CNN
 F 3 "" H 10250 1100 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    10250 1100
 	1    0    0    -1  
 $EndComp
@@ -301,6 +327,8 @@ F 0 "H2" H 10050 1300 60  0000 L CNN
 F 1 "Hole" H 10350 1250 60  0001 C CNN
 F 2 "CalinGeneric:HoleNPT-M2.5" H 10250 1300 60  0001 C CNN
 F 3 "" H 10250 1300 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    10250 1300
 	-1   0    0    -1  
 $EndComp
@@ -312,6 +340,10 @@ F 0 "R3" V 5680 1250 40  0000 C CNN
 F 1 "2k2" V 5600 1250 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 5530 1250 30  0001 C CNN
 F 3 "" H 5600 1250 30  0000 C CNN
+F 4 "2k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "ERJ6ENF2001V" H 0   0   50  0001 C CNN "part-number"
 	1    5600 1250
 	1    0    0    -1  
 $EndComp
@@ -323,6 +355,10 @@ F 0 "R4" V 5880 1250 40  0000 C CNN
 F 1 "2k2" V 5800 1250 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 5730 1250 30  0001 C CNN
 F 3 "" H 5800 1250 30  0000 C CNN
+F 4 "2k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "ERJ6ENF2001V" H 0   0   50  0001 C CNN "part-number"
 	1    5800 1250
 	1    0    0    -1  
 $EndComp
@@ -384,6 +420,10 @@ F 0 "R2" V 4980 3300 40  0000 C CNN
 F 1 "330" V 4900 3300 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 4830 3300 30  0001 C CNN
 F 3 "" H 4900 3300 30  0000 C CNN
+F 4 "330" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CRCW0805330RFKTABC" H 0   0   50  0001 C CNN "part-number"
 	1    4900 3300
 	0    1    1    0   
 $EndComp
@@ -417,6 +457,10 @@ F 0 "U30" H 2300 5450 60  0000 C CNN
 F 1 "RFM9x" H 2300 4550 60  0000 C CNN
 F 2 "CalinGeneric:RFM69HCW" H 2300 5000 60  0001 C CNN
 F 3 "" H 2300 5000 60  0000 C CNN
+F 4 "*" H 0   0   50  0001 C CNN "characteristics"
+F 5 "HOPERF" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "*" H 0   0   50  0001 C CNN "package"
+F 7 "RFM69HCW" H 0   0   50  0001 C CNN "part-number"
 	1    2300 5000
 	1    0    0    -1  
 $EndComp
@@ -428,6 +472,9 @@ F 0 "SYM2" H 1000 1050 50  0001 C CNN
 F 1 "Open Source Hardware" H 928 1050 50  0000 L CNN
 F 2 "CalinGeneric:OSHW-Logo_SilkS" H 850 1050 50  0001 C CNN
 F 3 "" V 850 1050 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
+F 6 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    850  1050
 	1    0    0    -1  
 $EndComp
@@ -491,24 +538,32 @@ Wire Wire Line
 Wire Wire Line
 	3000 4950 2900 4950
 $Comp
-L Device:C C32
+L calin:C C32
 U 1 1 5C574CF1
 P 3600 5400
 F 0 "C32" H 3625 5500 50  0000 L CNN
 F 1 "100nF" V 3650 5100 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 3638 5250 50  0001 C CNN
 F 3 "" H 3600 5400 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    3600 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C31
+L calin:C C31
 U 1 1 5C574CF8
 P 3950 5400
 F 0 "C31" H 3975 5500 50  0000 L CNN
 F 1 "10uF" V 4000 5150 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 3988 5250 50  0001 C CNN
 F 3 "" H 3950 5400 50  0000 C CNN
+F 4 "10 µF / 6,3 V" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B106KQQNNNE" H 0   0   50  0001 C CNN "part-number"
 	1    3950 5400
 	1    0    0    -1  
 $EndComp
@@ -559,13 +614,17 @@ Wire Wire Line
 Wire Wire Line
 	3600 5150 3600 5250
 $Comp
-L Device:C C30
+L calin:C C30
 U 1 1 5C588CDC
 P 1300 5400
 F 0 "C30" H 1325 5500 50  0000 L CNN
 F 1 "100nF" V 1350 5100 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 1338 5250 50  0001 C CNN
 F 3 "" H 1300 5400 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    1300 5400
 	1    0    0    -1  
 $EndComp
@@ -615,6 +674,12 @@ F 0 "U2" H 1300 2700 50  0000 C CNN
 F 1 "BD48K30" H 1300 2300 50  0000 C CNN
 F 2 "CalinGeneric:SOT-23-HS" H 1300 2500 50  0001 C CNN
 F 3 "" H 1300 2500 50  0001 C CNN
+F 4 "Standard CMOS Voltage Detector IC 3.0V" H 0   0   50  0001 C CNN "characteristics"
+F 5 "ROHM Semiconductor" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SSOP3 (SOT23-3)" H 0   0   50  0001 C CNN "package"
+F 7 "BD49K30" H 0   0   50  0001 C CNN "part-number"
+F 8 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 9 "test" H 0   0   50  0001 C CNN "Variant"
 	1    1300 2500
 	1    0    0    -1  
 $EndComp
@@ -814,6 +879,8 @@ F 0 "H3" H 10328 1500 60  0000 L CNN
 F 1 "Hole" H 10350 1450 60  0001 C CNN
 F 2 "CalinGeneric:HoleNPT-M2.5" H 10250 1500 60  0001 C CNN
 F 3 "" H 10250 1500 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    10250 1500
 	1    0    0    -1  
 $EndComp
@@ -825,6 +892,8 @@ F 0 "H4" H 10050 1700 60  0000 L CNN
 F 1 "Hole" H 10350 1650 60  0001 C CNN
 F 2 "CalinGeneric:HoleNPT-M2.5" H 10250 1700 60  0001 C CNN
 F 3 "" H 10250 1700 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    10250 1700
 	-1   0    0    -1  
 $EndComp
@@ -836,6 +905,8 @@ F 0 "J2" H 6328 3245 60  0000 L CNN
 F 1 "ph_1x2" H 6328 3147 50  0000 L CNN
 F 2 "CalinConnectors:Pin_Header_Straight_1x02" H 6250 3250 60  0001 C CNN
 F 3 "" H 6250 3250 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "test" H 0   0   50  0001 C CNN "Variant"
 	1    6250 3200
 	1    0    0    -1  
 $EndComp
@@ -847,6 +918,8 @@ F 0 "J1" H 2128 2845 60  0000 L CNN
 F 1 "ph_1x2" H 2128 2747 50  0000 L CNN
 F 2 "CalinConnectors:Pin_Header_Straight_1x02" H 2050 2850 60  0001 C CNN
 F 3 "" H 2050 2850 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "test" H 0   0   50  0001 C CNN "Variant"
 	1    2050 2800
 	1    0    0    -1  
 $EndComp
@@ -955,6 +1028,8 @@ F 0 "J7" H 6250 5150 60  0000 C CNN
 F 1 "ph_1x4" V 6350 4900 50  0000 C CNN
 F 2 "CalinConnectors:Pin_Header_Straight_1x04" H 6250 5050 60  0001 C CNN
 F 3 "" H 6250 5050 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "test" H 0   0   50  0001 C CNN "Variant"
 	1    6250 4900
 	1    0    0    -1  
 $EndComp
@@ -1003,13 +1078,17 @@ IO34
 Text Label 4950 4950 0    50   ~ 0
 IO35
 $Comp
-L Device:C C5
+L calin:C C5
 U 1 1 5CC0C4F0
 P 5300 5200
 F 0 "C5" H 5325 5300 50  0000 L CNN
 F 1 "100nF" V 5350 4900 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 5338 5050 50  0001 C CNN
 F 3 "" H 5300 5200 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    5300 5200
 	1    0    0    -1  
 $EndComp
@@ -1027,13 +1106,17 @@ $EndComp
 Wire Wire Line
 	5300 5350 5300 5450
 $Comp
-L Device:C C6
+L calin:C C6
 U 1 1 5CC289FE
 P 5650 5200
 F 0 "C6" H 5675 5300 50  0000 L CNN
 F 1 "100nF" V 5700 4900 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 5688 5050 50  0001 C CNN
 F 3 "" H 5650 5200 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    5650 5200
 	1    0    0    -1  
 $EndComp
@@ -1066,6 +1149,9 @@ F 0 "SYM5" H 1000 850 50  0001 C CNN
 F 1 "ESP32-RFM-Gateway" H 928 850 50  0000 L CNN
 F 2 "CalinGeneric:ValueAsText" H 850 850 50  0001 C CNN
 F 3 "" V 850 850 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
+F 6 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    850  850 
 	1    0    0    -1  
 $EndComp
@@ -1197,6 +1283,8 @@ F 0 "J10" H 9400 1900 60  0000 L CNN
 F 1 "CS_1" H 9600 1900 50  0000 L CNN
 F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 1900 60  0001 C CNN
 F 3 "" H 9300 1900 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    9300 1900
 	1    0    0    -1  
 $EndComp
@@ -1208,6 +1296,8 @@ F 0 "J11" H 9400 2050 60  0000 L CNN
 F 1 "CS_1" H 9600 2050 50  0000 L CNN
 F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2050 60  0001 C CNN
 F 3 "" H 9300 2050 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    9300 2050
 	1    0    0    -1  
 $EndComp
@@ -1219,6 +1309,8 @@ F 0 "J12" H 9400 2200 60  0000 L CNN
 F 1 "CS_1" H 9600 2200 50  0000 L CNN
 F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2200 60  0001 C CNN
 F 3 "" H 9300 2200 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    9300 2200
 	1    0    0    -1  
 $EndComp
@@ -1230,6 +1322,8 @@ F 0 "J13" H 9400 2350 60  0000 L CNN
 F 1 "CS_1" H 9600 2350 50  0000 L CNN
 F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2350 60  0001 C CNN
 F 3 "" H 9300 2350 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    9300 2350
 	1    0    0    -1  
 $EndComp
@@ -1241,6 +1335,8 @@ F 0 "J14" H 9400 2500 60  0000 L CNN
 F 1 "CS_1" H 9600 2500 50  0000 L CNN
 F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2500 60  0001 C CNN
 F 3 "" H 9300 2500 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    9300 2500
 	1    0    0    -1  
 $EndComp

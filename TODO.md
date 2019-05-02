@@ -4,9 +4,23 @@
 
 ## TODO
 
-### Component codes
+### Add component fields to schematic
 
-Add component codes for different sellers.
+Fields to be added:
+
+- manufacturer
+- part-number
+- characteristics
+- package
+- variant
+- source
+- notes
+
+https://github.com/xesscorp/KiCost
+
+https://rheingoldheavy.com/category/education/kicad/
+
+https://github.com/SchrodingersGat/KiBoM
 
 ### Front panel
 

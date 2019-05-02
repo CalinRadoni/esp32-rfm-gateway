@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-25"
-Rev "32"
+Date "2019-05-02"
+Rev "34"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -89,7 +89,7 @@ F 3 "" H 7450 4500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC2CA42
 P 6150 5250
 AR Path="/5CC2CA42" Ref="C?"  Part="1" 
@@ -98,6 +98,10 @@ F 0 "C25" V 6200 5350 50  0000 L CNN
 F 1 "100pF" V 6200 4950 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 6188 5100 50  0001 C CNN
 F 3 "" H 6150 5250 50  0000 C CNN
+F 4 "100pF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Wurth Electronics" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "885012207080" H 0   0   50  0001 C CNN "part-number"
 	1    6150 5250
 	1    0    0    -1  
 $EndComp
@@ -121,6 +125,10 @@ F 0 "U24" H 6800 4800 50  0000 C CNN
 F 1 "TLV379IDBV" H 6800 4400 50  0000 C CNN
 F 2 "CalinGeneric:SOT-23-5-HS" H 6800 4600 50  0001 C CNN
 F 3 "" H 6800 4600 50  0001 C CNN
+F 4 "MicroPower 4 μA, Low Offset Voltage, Unity-Gain Stable, Rail-to-Rail I/O " H 0   0   50  0001 C CNN "characteristics"
+F 5 "Texas Instruments" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SOT23-5" H 0   0   50  0001 C CNN "package"
+F 7 "TLV379IDBV" H 0   0   50  0001 C CNN "part-number"
 	1    6800 4600
 	1    0    0    -1  
 $EndComp
@@ -136,6 +144,8 @@ F 0 "H5" H 1500 2400 60  0000 C CNN
 F 1 "HolePlated" H 1500 2200 60  0001 C CNN
 F 2 "CalinConnectors:SMD_Pins_Big_1x1" H 1500 2300 60  0001 C CNN
 F 3 "" H 1500 2300 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    1500 2300
 	0    -1   -1   0   
 $EndComp
@@ -179,6 +189,7 @@ F 0 "J25" H 9250 3300 60  0000 C CNN
 F 1 "ph_1x2" V 9350 3150 50  0000 C CNN
 F 2 "CalinConnectors:Pin_Header_Angled_1x02" H 9250 3200 60  0001 C CNN
 F 3 "" H 9250 3200 60  0000 C CNN
+F 4 "test" H 0   0   50  0001 C CNN "Variant"
 	1    9250 3150
 	-1   0    0    -1  
 $EndComp
@@ -209,6 +220,7 @@ F 0 "J24" H 7850 3300 60  0000 C CNN
 F 1 "ph_1x3" V 7950 3100 50  0000 C CNN
 F 2 "CalinConnectors:Pin_Header_Angled_1x03" H 7850 3200 60  0001 C CNN
 F 3 "" H 7850 3200 60  0000 C CNN
+F 4 "test" H 0   0   50  0001 C CNN "Variant"
 	1    7850 3100
 	-1   0    0    -1  
 $EndComp
@@ -323,6 +335,10 @@ F 0 "R26" V 6180 2650 40  0000 C CNN
 F 1 "10k" V 6100 2650 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 6030 2650 30  0001 C CNN
 F 3 "" H 6100 2650 30  0000 C CNN
+F 4 "10k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CRCW080510K0FKEA" H 0   0   50  0001 C CNN "part-number"
 	1    6100 2650
 	1    0    0    -1  
 $EndComp
@@ -348,6 +364,9 @@ F 0 "SYM4" H 1600 1300 50  0001 C CNN
 F 1 "High Voltage !" H 1528 1300 50  0000 L CNN
 F 2 "CalinGeneric:Symbol_HighVoltage_SilkS" H 1450 1300 50  0001 C CNN
 F 3 "" V 1450 1300 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
+F 6 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    1450 1300
 	1    0    0    -1  
 $EndComp
@@ -380,11 +399,13 @@ F 0 "J20" V 1550 1800 60  0000 C CNN
 F 1 "220V~" H 1450 1600 50  0000 C CNN
 F 2 "CalinConnectors:THT_Pins_Big_1x3" H 1450 1900 60  0001 C CNN
 F 3 "" H 1450 1900 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
 	1    1450 1800
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC2CADE
 P 7350 5000
 AR Path="/5CC2CADE" Ref="C?"  Part="1" 
@@ -393,6 +414,10 @@ F 0 "C26" V 7400 5100 50  0000 L CNN
 F 1 "100nF" V 7400 4700 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 7388 4850 50  0001 C CNN
 F 3 "" H 7350 5000 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    7350 5000
 	1    0    0    -1  
 $EndComp
@@ -410,6 +435,7 @@ F 0 "J22" V 3600 5050 60  0000 L CNN
 F 1 "s14500" V 3600 4700 50  0000 L CNN
 F 2 "CalinConnectors:BattHolder-AA-PCB" H 3500 5000 60  0001 C CNN
 F 3 "" H 3500 5000 60  0000 C CNN
+F 4 "14500" H 0   0   50  0001 C CNN "Variant"
 	1    3500 4950
 	1    0    0    -1  
 $EndComp
@@ -443,6 +469,7 @@ F 0 "J23" V 3900 5050 60  0000 L CNN
 F 1 "s18650" V 3900 4700 50  0000 L CNN
 F 2 "CalinConnectors:KEYS-1043" H 3800 5000 60  0001 C CNN
 F 3 "" H 3800 5000 60  0000 C CNN
+F 4 "18650" H 0   0   50  0001 C CNN "Variant"
 	1    3800 4950
 	1    0    0    -1  
 $EndComp
@@ -456,6 +483,9 @@ F 0 "SYM3" H 1600 1100 50  0001 C CNN
 F 1 "High Voltage !" H 1528 1100 50  0000 L CNN
 F 2 "CalinGeneric:Symbol_HighVoltage_SilkS" H 1450 1100 50  0001 C CNN
 F 3 "" V 1450 1100 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
+F 6 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    1450 1100
 	1    0    0    -1  
 $EndComp
@@ -499,6 +529,8 @@ F 0 "J21" H 3750 2300 60  0000 C CNN
 F 1 "ph_1x2" V 3850 2150 50  0000 C CNN
 F 2 "CalinConnectors:Pin_Header_Straight_1x02" H 3750 2200 60  0001 C CNN
 F 3 "" H 3750 2200 60  0000 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "test" H 0   0   50  0001 C CNN "Variant"
 	1    3750 2150
 	-1   0    0    -1  
 $EndComp
@@ -542,6 +574,10 @@ F 0 "U20" H 2450 2000 60  0000 C CNN
 F 1 "IRM-05" H 2450 1600 60  0000 C CNN
 F 2 "CalinGeneric:IRM222A" H 2450 1800 60  0001 C CNN
 F 3 "" H 2450 1800 60  0001 C CNN
+F 4 "5W AC-DC module-type power supply" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Mean Well" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "222A" H 0   0   50  0001 C CNN "package"
+F 7 "IRM-05" H 0   0   50  0001 C CNN "part-number"
 	1    2450 1800
 	1    0    0    -1  
 $EndComp
@@ -576,6 +612,10 @@ F 0 "U22" H 7700 1950 50  0000 C CNN
 F 1 "BD49K35" H 7700 1550 50  0000 C CNN
 F 2 "CalinGeneric:SOT-23-HS" H 7700 1750 50  0001 C CNN
 F 3 "" H 7700 1750 50  0001 C CNN
+F 4 "Standard CMOS Voltage Detector IC 3.5V" H 0   0   50  0001 C CNN "characteristics"
+F 5 "ROHM Semiconductor" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SSOP3 (SOT23-3)" H 0   0   50  0001 C CNN "package"
+F 7 "BD49K35" H 0   0   50  0001 C CNN "part-number"
 	1    7700 1750
 	1    0    0    -1  
 $EndComp
@@ -602,6 +642,11 @@ F 0 "R22" V 5980 4750 40  0000 C CNN
 F 1 "2M" V 5900 4750 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 5830 4750 30  0001 C CNN
 F 3 "" H 5900 4750 30  0000 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Source"
+F 5 "2M 1%" H 0   0   50  0001 C CNN "characteristics"
+F 6 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 7 "0805" H 0   0   50  0001 C CNN "package"
+F 8 "ERJ-6ENF2004V" H 0   0   50  0001 C CNN "part-number"
 	1    5900 4750
 	1    0    0    -1  
 $EndComp
@@ -661,10 +706,14 @@ U 1 1 5CC2CB66
 P 8650 1500
 AR Path="/5CC2CB66" Ref="U?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CB66" Ref="U23"  Part="1" 
-F 0 "U23" H 8650 1700 50  0000 C CNN
-F 1 "TLV62569DBV" H 8650 1300 50  0000 C CNN
-F 2 "CalinGeneric:SOT-23-5-HS" H 8650 1500 60  0001 C CNN
-F 3 "" H 8650 1500 60  0000 C CNN
+F 0 "U23" H 8650 1700 60  0000 C CNN
+F 1 "TLV62569DBV" H 8650 1300 60  0000 C CNN
+F 2 "CalinGeneric:SOT-23-5-HS" H 8550 1600 60  0001 C CNN
+F 3 "" H 8650 1700 60  0001 C CNN
+F 4 "Step-Down Converter 2A 1.5MHz Iq=35uA" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Texas Instrumnets" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SOT23-5" H 0   0   50  0001 C CNN "package"
+F 7 "TLV62569DBV" H 0   0   50  0001 C CNN "part-number"
 	1    8650 1500
 	1    0    0    -1  
 $EndComp
@@ -678,6 +727,11 @@ F 0 "R28" V 9100 1800 40  0000 C CNN
 F 1 "100k 1%" V 9000 1800 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 9030 1800 30  0001 C CNN
 F 3 "" H 9100 1800 30  0000 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Source"
+F 5 "100k 1%" H 0   0   50  0001 C CNN "characteristics"
+F 6 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 7 "0805" H 0   0   50  0001 C CNN "package"
+F 8 "ERJ-6ENF1003V" H 0   0   50  0001 C CNN "part-number"
 	1    9100 1800
 	1    0    0    -1  
 $EndComp
@@ -691,6 +745,11 @@ F 0 "R27" V 9350 1600 40  0000 C CNN
 F 1 "442k 1%" V 9450 1600 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 9280 1600 30  0001 C CNN
 F 3 "" H 9350 1600 30  0000 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Source"
+F 5 "442k 1%" H 0   0   50  0001 C CNN "characteristics"
+F 6 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 7 "0805" H 0   0   50  0001 C CNN "package"
+F 8 "ERJ-6ENF4423V" H 0   0   50  0001 C CNN "part-number"
 	1    9350 1600
 	0    1    1    0   
 $EndComp
@@ -717,7 +776,7 @@ Connection ~ 1450 4500
 Wire Wire Line
 	1800 4500 1450 4500
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC2CB86
 P 1450 4950
 AR Path="/5CC2CB86" Ref="C?"  Part="1" 
@@ -726,6 +785,10 @@ F 0 "C20" V 1500 5050 50  0000 L CNN
 F 1 "10uF" V 1500 4700 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 1488 4800 50  0001 C CNN
 F 3 "" H 1450 4950 50  0000 C CNN
+F 4 "10 µF / 6,3 V" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B106KQQNNNE" H 0   0   50  0001 C CNN "part-number"
 	1    1450 4950
 	1    0    0    -1  
 $EndComp
@@ -735,10 +798,13 @@ U 1 1 5CC2CB8D
 P 1950 4200
 AR Path="/5CC2CB8D" Ref="D?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CB8D" Ref="D20"  Part="1" 
-F 0 "D20" H 1950 4100 50  0000 C CNN
-F 1 "LEDG" H 1950 4300 50  0000 C CNN
+F 0 "D20" H 1950 4300 50  0000 C CNN
+F 1 "LED-NC" H 2000 4100 39  0000 C CIN
 F 2 "CalinGeneric:LED0805HS" H 1950 4200 50  0001 C CNN
 F 3 "" H 1950 4200 50  0001 C CNN
+F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 5 "DNP" H 0   0   50  0001 C CNN "Variant"
+F 6 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    1950 4200
 	-1   0    0    1   
 $EndComp
@@ -767,6 +833,11 @@ F 0 "R23" V 5980 5250 40  0000 C CNN
 F 1 "2M" V 5900 5250 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 5830 5250 30  0001 C CNN
 F 3 "" H 5900 5250 30  0000 C CNN
+F 4 "Mouser" H 0   0   50  0001 C CNN "Source"
+F 5 "2M 1%" H 0   0   50  0001 C CNN "characteristics"
+F 6 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 7 "0805" H 0   0   50  0001 C CNN "package"
+F 8 "ERJ-6ENF2004V" H 0   0   50  0001 C CNN "part-number"
 	1    5900 5250
 	1    0    0    -1  
 $EndComp
@@ -818,9 +889,14 @@ P 2750 4200
 AR Path="/5CC2CBB7" Ref="R?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CBB7" Ref="R21"  Part="1" 
 F 0 "R21" V 2830 4200 40  0000 C CNN
-F 1 "330" V 2750 4200 40  0000 C CNN
+F 1 "330-NC" V 2650 4200 39  0000 C CIN
 F 2 "CalinGeneric:R0805HS" V 2680 4200 30  0001 C CNN
 F 3 "" H 2750 4200 30  0000 C CNN
+F 4 "330" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "DNP" H 0   0   50  0001 C CNN "part-number"
+F 8 "DNP" H 0   0   50  0001 C CNN "Notes"
 	1    2750 4200
 	0    1    1    0   
 $EndComp
@@ -895,7 +971,7 @@ Connection ~ 3200 4500
 Wire Wire Line
 	2900 4500 3200 4500
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC2CBDF
 P 3200 4950
 AR Path="/5CC2CBDF" Ref="C?"  Part="1" 
@@ -904,6 +980,10 @@ F 0 "C21" V 3250 5050 50  0000 L CNN
 F 1 "10uF" V 3250 4700 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 3238 4800 50  0001 C CNN
 F 3 "" H 3200 4950 50  0000 C CNN
+F 4 "10 µF / 6,3 V" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B106KQQNNNE" H 0   0   50  0001 C CNN "part-number"
 	1    3200 4950
 	1    0    0    -1  
 $EndComp
@@ -914,9 +994,13 @@ P 1700 4950
 AR Path="/5CC2CBE7" Ref="R?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CBE7" Ref="R20"  Part="1" 
 F 0 "R20" V 1780 4950 40  0000 C CNN
-F 1 "2K2" V 1700 4950 40  0000 C CNN
+F 1 "2k2" V 1700 4950 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 1630 4950 30  0001 C CNN
 F 3 "" H 1700 4950 30  0000 C CNN
+F 4 "2k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "ERJ6ENF2001V" H 0   0   50  0001 C CNN "part-number"
 	1    1700 4950
 	1    0    0    -1  
 $EndComp
@@ -934,7 +1018,7 @@ F 3 "" H 1350 4500 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L calin:MCP73831 U?
+L calin:MCP73832 U?
 U 1 1 5CC2CBF4
 P 2350 4600
 AR Path="/5CC2CBF4" Ref="U?"  Part="1" 
@@ -943,6 +1027,10 @@ F 0 "U21" H 2350 4400 50  0000 C CNN
 F 1 "MCP73832T-2ACI" H 2350 4800 50  0000 C CNN
 F 2 "CalinGeneric:SOT-23-5-HS" H 2350 4600 60  0001 C CNN
 F 3 "" H 2350 4600 60  0000 C CNN
+F 4 "Single-Cell, Li-Ion, Li-Polymer Charge Management Controller, Tri-State Charge Status Output" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Microchip" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SOT23-5" H 0   0   50  0001 C CNN "package"
+F 7 "MCP73832T-2ACI" H 0   0   50  0001 C CNN "part-number"
 	1    2350 4600
 	-1   0    0    1   
 $EndComp
@@ -1013,6 +1101,10 @@ F 0 "R25" V 6180 2150 40  0000 C CNN
 F 1 "10k" V 6100 2150 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 6030 2150 30  0001 C CNN
 F 3 "" H 6100 2150 30  0000 C CNN
+F 4 "10k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CRCW080510K0FKEA" H 0   0   50  0001 C CNN "part-number"
 	1    6100 2150
 	1    0    0    -1  
 $EndComp
@@ -1026,6 +1118,10 @@ F 0 "D21" V 6500 1650 50  0000 R CNN
 F 1 "B340AE-13" H 6100 1600 50  0000 C CNN
 F 2 "CalinGeneric:SMA-HS" H 6400 1650 50  0001 C CNN
 F 3 "" H 6400 1650 50  0000 C CNN
+F 4 "3A schottky rectifier" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Diodes" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SMA" H 0   0   50  0001 C CNN "package"
+F 7 "B340AE-13" H 0   0   50  0001 C CNN "part-number"
 	1    6400 1650
 	0    -1   -1   0   
 $EndComp
@@ -1039,6 +1135,10 @@ F 0 "Q20" V 5950 1450 50  0000 C CNN
 F 1 "IRLML2244" V 6350 1550 50  0000 C CNN
 F 2 "CalinGeneric:SOT-23-GSD-HS" H 6090 1550 60  0001 C CNN
 F 3 "" H 6090 1550 60  0000 C CNN
+F 4 "*" H 0   0   50  0001 C CNN "characteristics"
+F 5 "International Rectifier" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SOT23-3" H 0   0   50  0001 C CNN "package"
+F 7 "IRLML2244TRPbF" H 0   0   50  0001 C CNN "part-number"
 	1    6100 1550
 	0    -1   -1   0   
 $EndComp
@@ -1052,6 +1152,8 @@ F 0 "L21" H 9300 1300 50  0000 C CNN
 F 1 "2.2uH" H 9300 1500 40  0000 C CNN
 F 2 "CalinGeneric:ASPI-0530HI" H 9300 1400 60  0001 C CNN
 F 3 "" H 9300 1400 60  0001 C CNN
+F 4 "Abracon Corporation" H 0   0   50  0001 C CNN "manufacturer"
+F 5 "ASPI-0530HI-2R2M-T2" H 0   0   50  0001 C CNN "part-number"
 	1    9300 1400
 	-1   0    0    1   
 $EndComp
@@ -1076,7 +1178,7 @@ F 3 "" H 6700 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC2CC3D
 P 6700 1650
 AR Path="/5CC2CC3D" Ref="C?"  Part="1" 
@@ -1085,6 +1187,10 @@ F 0 "C22" H 6750 1750 50  0000 L CNN
 F 1 "100nF" V 6750 1350 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 6738 1500 50  0001 C CNN
 F 3 "" H 6700 1650 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    6700 1650
 	1    0    0    -1  
 $EndComp
@@ -1153,28 +1259,36 @@ F 3 "" H 8200 2000 50  0000 C CNN
 $EndComp
 Connection ~ 9600 1600
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC2CC63
 P 9600 1750
 AR Path="/5CC2CC63" Ref="C?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CC63" Ref="C24"  Part="1" 
 F 0 "C24" V 9650 1550 50  0000 L CNN
-F 1 "22uF/1mOhm" V 9750 1750 40  0000 C CNN
+F 1 "22uF/6.3V/1mOhm" V 9750 1750 40  0000 C CNN
 F 2 "CalinGeneric:C0805HS" H 9638 1600 50  0001 C CNN
 F 3 "" H 9600 1750 50  0000 C CNN
+F 4 "Taiyo Yuden" H 0   0   50  0001 C CNN "manufacturer"
+F 5 "0805" H 0   0   50  0001 C CNN "package"
+F 6 "JMK212BJ226MG-T" H 0   0   50  0001 C CNN "part-number"
+F 7 "22 µF / 6.3 V / X5R / ESR: 1 mΩ" H 0   0   50  0001 C CNN "characteristics"
 	1    9600 1750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC2CC6A
 P 7000 1650
 AR Path="/5CC2CC6A" Ref="C?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CC6A" Ref="C23"  Part="1" 
-F 0 "C23" H 7050 1750 50  0000 L CNN
-F 1 "10uF" V 7050 1400 50  0000 L CNN
+F 0 "C23" V 7050 1450 50  0000 L CNN
+F 1 "10uF/10V/1mOhm" V 7150 1550 40  0000 C CNN
 F 2 "CalinGeneric:C0805HS" H 7038 1500 50  0001 C CNN
 F 3 "" H 7000 1650 50  0000 C CNN
+F 4 "Taiyo Yuden" H 0   0   50  0001 C CNN "manufacturer"
+F 5 "0805" H 0   0   50  0001 C CNN "package"
+F 6 "10 µF / 16 V / X7R / ESR: 1 mΩ" H 0   0   50  0001 C CNN "characteristics"
+F 7 "EMK212BB7106KG-T" H 0   0   50  0001 C CNN "part-number"
 	1    7000 1650
 	1    0    0    -1  
 $EndComp
@@ -1245,6 +1359,10 @@ F 0 "R29" V 3430 1200 40  0000 C CNN
 F 1 "330" V 3350 1200 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 3280 1200 30  0001 C CNN
 F 3 "" H 3350 1200 30  0000 C CNN
+F 4 "330" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CRCW0805330RFKTABC" H 0   0   50  0001 C CNN "part-number"
 	1    3350 1200
 	0    1    1    0   
 $EndComp
@@ -1255,9 +1373,10 @@ P 3750 1200
 AR Path="/5CC23A10" Ref="D?"  Part="1" 
 AR Path="/5CBFFED5/5CC23A10" Ref="D29"  Part="1" 
 F 0 "D29" H 3750 1100 50  0000 C CNN
-F 1 "LEDG" H 3750 1300 50  0000 C CNN
+F 1 "LED Green" H 3750 1300 50  0000 C CNN
 F 2 "CalinGeneric:LED0805HS" H 3750 1200 50  0001 C CNN
 F 3 "" H 3750 1200 50  0001 C CNN
+F 4 "test" H 0   0   50  0001 C CNN "Variant"
 	1    3750 1200
 	1    0    0    -1  
 $EndComp
