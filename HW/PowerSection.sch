@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 2 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-05-02"
-Rev "33"
+Rev "34"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -799,7 +799,7 @@ P 1950 4200
 AR Path="/5CC2CB8D" Ref="D?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CB8D" Ref="D20"  Part="1" 
 F 0 "D20" H 1950 4300 50  0000 C CNN
-F 1 "LED-DNP" H 2000 4100 39  0000 C CIN
+F 1 "LED-NC" H 2000 4100 39  0000 C CIN
 F 2 "CalinGeneric:LED0805HS" H 1950 4200 50  0001 C CNN
 F 3 "" H 1950 4200 50  0001 C CNN
 F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
@@ -889,7 +889,7 @@ P 2750 4200
 AR Path="/5CC2CBB7" Ref="R?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CBB7" Ref="R21"  Part="1" 
 F 0 "R21" V 2830 4200 40  0000 C CNN
-F 1 "330-DNP" V 2650 4200 39  0000 C CIN
+F 1 "330-NC" V 2650 4200 39  0000 C CIN
 F 2 "CalinGeneric:R0805HS" V 2680 4200 30  0001 C CNN
 F 3 "" H 2750 4200 30  0000 C CNN
 F 4 "330" H 0   0   50  0001 C CNN "characteristics"

@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-05-02"
-Rev "33"
+Rev "34"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -78,14 +78,14 @@ $Comp
 L calin:C C4
 U 1 1 5B37F59B
 P 5900 3200
-F 0 "C4" H 5950 3300 50  0000 L CNN
-F 1 "100nF" V 5950 2900 50  0000 L CNN
+F 0 "C4" V 5950 3300 50  0000 C CNN
+F 1 "100nF-NC" V 5750 3200 39  0000 C CIN
 F 2 "CalinGeneric:C0805HS" H 5938 3050 50  0001 C CNN
 F 3 "" H 5900 3200 50  0000 C CNN
-F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
-F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 4 "*" H 0   0   50  0001 C CNN "characteristics"
+F 5 "*" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "0805" H 0   0   50  0001 C CNN "package"
-F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
+F 7 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    5900 3200
 	1    0    0    -1  
 $EndComp

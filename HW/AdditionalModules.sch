@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 3 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-05-02"
-Rev "33"
+Rev "34"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -337,7 +337,7 @@ F 3 "" V 9800 1200 50  0001 C CNN
 F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
 F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
-F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
+F 7 "SLP3-150-150-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 1200
 	1    0    0    -1  
 $EndComp
@@ -354,7 +354,7 @@ F 3 "" V 9800 1500 50  0001 C CNN
 F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
 F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
-F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
+F 7 "SLP3-150-150-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 1500
 	1    0    0    -1  
 $EndComp
@@ -371,7 +371,7 @@ F 3 "" V 9800 1800 50  0001 C CNN
 F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
 F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
-F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
+F 7 "SLP3-150-150-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 1800
 	1    0    0    -1  
 $EndComp
@@ -388,7 +388,7 @@ F 3 "" V 9800 2100 50  0001 C CNN
 F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
 F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
-F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
+F 7 "SLP3-150-150-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 2100
 	1    0    0    -1  
 $EndComp
