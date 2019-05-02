@@ -1,24 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_C
-#
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Transistor_BJT_BC817
 #
 DEF Transistor_BJT_BC817 Q 0 0 Y N 1 F N
@@ -49,6 +31,10 @@ F0 "U" 0 250 50 H V C CNN
 F1 "calin_AT_CryptoAuth" 0 -250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "Microchip" 0 300 50 H I C CNN "manufacturer"
+F5 "ATSHA204A/ATECC508A/ATECC608A-SSHDA" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "SOIC-8 3.90mm" 0 450 50 H I C CNN "package"
 ALIAS ATSHA204A ATECC508A ATECC608A
 DRAW
 S -200 200 200 -200 0 1 0 f
@@ -68,8 +54,12 @@ ENDDEF
 DEF calin_BD49K U 0 40 Y Y 1 F N
 F0 "U" 0 200 50 H V C CNN
 F1 "calin_BD49K" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F2 "" -100 100 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+F4 "ROHM Semiconductor" 0 300 50 H I C CNN "manufacturer"
+F5 "BD49K" 0 350 50 H I C CNN "part-number"
+F6 "Standard CMOS Voltage Detector IC" 0 400 50 H I C CNN "characteristics"
+F7 "SSOP3 (SOT23-3)" 0 450 50 H I C CNN "package"
 $FPLIST
  SOT-23-5
  SOT-25
@@ -82,6 +72,28 @@ X VDD 3 -300 100 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# calin_C
+#
+DEF calin_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "calin_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # calin_CS_1
 #
 DEF calin_CS_1 J 0 40 Y N 1 F N
@@ -89,6 +101,10 @@ F0 "J" 0 100 60 H V C CNN
 F1 "calin_CS_1" 150 0 50 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -50 50 50 -50 0 1 0 N
 S -20 20 20 -20 0 1 0 F
@@ -103,6 +119,10 @@ F0 "J" -100 0 60 V V C CNN
 F1 "calin_CS_2" 100 0 50 V V C CNN
 F2 "" 0 50 60 H V C CNN
 F3 "" 0 50 60 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -50 100 50 -100 0 1 0 N
 S -20 -30 20 -70 0 1 0 F
@@ -120,6 +140,10 @@ F0 "J" 0 150 60 H V C CNN
 F1 "calin_CS_2s" 100 0 50 V V C CNN
 F2 "" 0 50 60 H V C CNN
 F3 "" 0 50 60 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -50 100 50 -100 0 1 0 N
 S -20 -30 20 -70 0 1 0 F
@@ -137,6 +161,10 @@ F0 "J" 0 200 60 H V C CNN
 F1 "calin_CS_3" 100 0 50 V V C CNN
 F2 "" 0 100 60 H V C CNN
 F3 "" 0 100 60 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -50 150 50 -150 0 1 0 N
 S -20 -80 20 -120 0 1 0 F
@@ -156,6 +184,10 @@ F0 "J" 0 250 60 H V C CNN
 F1 "calin_CS_4" 100 0 50 V V C CNN
 F2 "" 0 150 60 H V C CNN
 F3 "" 0 150 60 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -50 200 50 -200 0 1 0 N
 S -20 -130 20 -170 0 1 0 F
@@ -177,6 +209,10 @@ F0 "J" 0 300 60 H V C CNN
 F1 "calin_CS_5" 100 0 50 V V C CNN
 F2 "" 0 200 60 H V C CNN
 F3 "" 0 200 60 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -50 250 50 -250 0 1 0 N
 S -20 -180 20 -220 0 1 0 F
@@ -200,6 +236,10 @@ F0 "D" 0 100 50 H V C CNN
 F1 "calin_DiodeSchottky" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 P 4 0 1 8 -50 -50 -50 50 25 0 -50 -50 F
 P 4 0 1 8 15 50 30 35 30 -35 45 -50 N
@@ -215,6 +255,10 @@ F0 "U" 0 600 60 H V C CNN
 F1 "calin_ESP-WROOM-32" 0 -100 60 V V C CNN
 F2 "" 0 -150 60 H I C CNN
 F3 "" 0 -150 60 H I C CNN
+F4 "Espressif" 0 300 50 H I C CNN "manufacturer"
+F5 "ESP32-WROOM-32" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -700 1050 700 -750 0 1 0 f
 P 2 0 1 0 -700 800 700 800 N
@@ -283,6 +327,10 @@ F0 "U" 0 250 60 H V C CNN
 F1 "calin_HIH8000_I2C" 0 -250 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
+F4 "Honeywell" 0 300 50 H I C CNN "manufacturer"
+F5 "HIH8130-021-001 / HIH8131-021-001" 0 350 50 H I C CNN "part-number"
+F6 "+/- 2.0 RH Accuracy" 0 400 50 H I C CNN "characteristics"
+F7 "SOIC-8 3.90mm" 0 450 50 H I C CNN "package"
 DRAW
 S -250 200 250 -200 0 1 0 f
 X Vcore 1 -350 150 100 R 50 39 1 1 P
@@ -328,7 +376,10 @@ F0 "Q" 50 210 60 H V R CNN
 F1 "calin_IRLML2244" 80 -210 60 H V R CNN
 F2 "" -10 0 60 H V C CNN
 F3 "" -10 0 60 H V C CNN
-ALIAS IRLML2244
+F4 "International Rectifier" 0 300 50 H I C CNN "manufacturer"
+F5 "IRLML2244TRPbF" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "SOT23-3" 0 450 50 H I C CNN "package"
 $FPLIST
  SOT-23-calin
 $ENDFPLIST
@@ -358,6 +409,10 @@ F0 "U" 0 200 60 H V C CNN
 F1 "calin_IRM-05" 0 -200 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
+F4 "Mean Well" 0 300 50 H I C CNN "manufacturer"
+F5 "IRM-05" 0 350 50 H I C CNN "part-number"
+F6 "5W(10W) AC-DC module-type power supply" 0 400 50 H I C CNN "characteristics"
+F7 "222A" 0 450 50 H I C CNN "package"
 ALIAS IRM-10
 $FPLIST
  IRM222A
@@ -378,6 +433,10 @@ F0 "L" 0 100 60 H V C CNN
 F1 "calin_InductorFB" 0 -100 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 S -110 40 110 -40 0 1 0 F
 X 1 1 -200 0 89 R 50 50 1 1 P
@@ -392,6 +451,10 @@ F0 "D" 0 100 50 H V C CNN
 F1 "calin_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 DRAW
 P 2 0 1 8 -50 -50 -50 50 N
 P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
@@ -402,14 +465,17 @@ X K K -150 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# calin_MCP73831
+# calin_MCP73832
 #
-DEF calin_MCP73831 U 0 40 Y Y 1 F N
+DEF calin_MCP73832 U 0 40 Y Y 1 F N
 F0 "U" 150 200 60 H V C CNN
-F1 "calin_MCP73831" 0 -200 60 H V C CNN
+F1 "calin_MCP73832" 0 -200 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
-ALIAS MCP73832
+F4 "Microchip" 0 300 50 H I C CNN "manufacturer"
+F5 "MCP73832" 0 350 50 H I C CNN "part-number"
+F6 "Single-Cell, Li-Ion, Li-Polymer Charge Management Controller, Open-Drain Charge Status Output" 0 400 50 H I C CNN "characteristics"
+F7 "SOT23-5" 0 450 50 H I C CNN "package"
 $FPLIST
  SOT23-5
 $ENDFPLIST
@@ -430,6 +496,10 @@ F0 "U" 0 250 50 H V C CNN
 F1 "calin_PCA9633DP1" 0 -250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "NXP Semiconductors" 0 300 50 H I C CNN "manufacturer"
+F5 "PCA9633DP1" 0 350 50 H I C CNN "part-number"
+F6 "4-bit Fm+ I2C-bus LED driver" 0 400 50 H I C CNN "characteristics"
+F7 "TSSOP8 (SOT505-1)" 0 450 50 H I C CNN "package"
 $FPLIST
  SOT505-1
 $ENDFPLIST
@@ -453,6 +523,10 @@ F0 "R" 80 0 40 V V C CNN
 F1 "calin_R" 7 1 40 V V C CNN
 F2 "" -70 0 30 V V C CNN
 F3 "" 0 0 30 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 $FPLIST
  R?
  SM0603
@@ -474,6 +548,10 @@ F0 "U" 0 450 60 H V C CNN
 F1 "calin_RFM9x" 0 -450 60 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
+F4 "HOPERF" 0 300 50 H I C CNN "manufacturer"
+F5 "RFM69HCW" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
 ALIAS RFM9x
 $FPLIST
  RFM69HCW
@@ -518,6 +596,10 @@ F0 "U" 0 200 50 H V C CNN
 F1 "calin_TLV379IDBV" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "Texas Instruments" 0 300 50 H I C CNN "manufacturer"
+F5 "TLV379IDBV" 0 350 50 H I C CNN "part-number"
+F6 "MicroPower 4 μA, Low Offset Voltage, Unity-Gain Stable, Rail-to-Rail I/O " 0 400 50 H I C CNN "characteristics"
+F7 "SOT23-5" 0 450 50 H I C CNN "package"
 $FPLIST
  SOT23-5
 $ENDFPLIST
@@ -536,8 +618,12 @@ ENDDEF
 DEF calin_TLV62569DBV U 0 40 Y Y 1 F N
 F0 "U" 0 200 60 H V C CNN
 F1 "calin_TLV62569DBV" 0 -200 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
+F2 "" -100 100 60 H I C CNN
+F3 "" 0 200 60 H I C CNN
+F4 "Texas Instruments" 0 300 50 H I C CNN "manufacturer"
+F5 "TLV62569DBV" 0 350 50 H I C CNN "part-number"
+F6 "Step-Down Converter 2A 1.5MHz Iq=35uA" 0 400 50 H I C CNN "characteristics"
+F7 "SOT23-5" 0 450 50 H I C CNN "package"
 $FPLIST
  SOT23-5
 $ENDFPLIST

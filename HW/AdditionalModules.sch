@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-04-25"
-Rev "32"
+Date "2019-05-02"
+Rev "33"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -24,11 +24,16 @@ F 0 "U40" H 2200 4700 50  0000 C CNN
 F 1 "AT_CryptoAuth" H 2200 4200 50  0000 C CNN
 F 2 "CalinGeneric:SOIC-8-HS" H 2200 4450 50  0001 C CNN
 F 3 "" H 2200 4450 50  0001 C CNN
+F 4 "ATCrypto" H 0   0   50  0001 C CNN "Variant"
+F 5 "ATSHA204A/ATECC508A/ATECC608A-SSHDA" H 0   0   50  0001 C CNN "part-number"
+F 6 "*" H 0   0   50  0001 C CNN "characteristics"
+F 7 "Microchip" H 0   0   50  0001 C CNN "manufacturer"
+F 8 "SOIC-8 3.90mm" H 0   0   50  0001 C CNN "package"
 	1    2200 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CCB0E9E
 P 1350 4450
 AR Path="/5CCB0E9E" Ref="C?"  Part="1" 
@@ -37,6 +42,11 @@ F 0 "C40" H 1375 4550 50  0000 L CNN
 F 1 "100nF" V 1400 4150 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 1388 4300 50  0001 C CNN
 F 3 "" H 1350 4450 50  0000 C CNN
+F 4 "ATCrypto" H 0   0   50  0001 C CNN "Variant"
+F 5 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 6 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 7 "0805" H 0   0   50  0001 C CNN "package"
+F 8 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    1350 4450
 	1    0    0    -1  
 $EndComp
@@ -149,6 +159,10 @@ F 0 "R10" V 8580 1200 40  0000 C CNN
 F 1 "100" V 8500 1200 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 8430 1200 30  0001 C CNN
 F 3 "" H 8500 1200 30  0000 C CNN
+F 4 "100 1%" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "ERJ-6ENF1000V" H 0   0   50  0001 C CNN "part-number"
 	1    8500 1200
 	0    1    1    0   
 $EndComp
@@ -192,6 +206,10 @@ F 0 "R11" V 8580 1500 40  0000 C CNN
 F 1 "100" V 8500 1500 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 8430 1500 30  0001 C CNN
 F 3 "" H 8500 1500 30  0000 C CNN
+F 4 "100 1%" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "ERJ-6ENF1000V" H 0   0   50  0001 C CNN "part-number"
 	1    8500 1500
 	0    1    1    0   
 $EndComp
@@ -235,6 +253,10 @@ F 0 "R12" V 8580 1800 40  0000 C CNN
 F 1 "100" V 8500 1800 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 8430 1800 30  0001 C CNN
 F 3 "" H 8500 1800 30  0000 C CNN
+F 4 "100 1%" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "ERJ-6ENF1000V" H 0   0   50  0001 C CNN "part-number"
 	1    8500 1800
 	0    1    1    0   
 $EndComp
@@ -278,6 +300,10 @@ F 0 "R13" V 8580 2100 40  0000 C CNN
 F 1 "100" V 8500 2100 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 8430 2100 30  0001 C CNN
 F 3 "" H 8500 2100 30  0000 C CNN
+F 4 "100 1%" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "ERJ-6ENF1000V" H 0   0   50  0001 C CNN "part-number"
 	1    8500 2100
 	0    1    1    0   
 $EndComp
@@ -308,6 +334,10 @@ F 0 "SYM10" H 9950 1200 50  0001 C CNN
 F 1 "LightPipe" H 9878 1200 50  0000 L CNN
 F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 1200 50  0001 C CNN
 F 3 "" V 9800 1200 50  0001 C CNN
+F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
+F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
+F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 1200
 	1    0    0    -1  
 $EndComp
@@ -321,6 +351,10 @@ F 0 "SYM11" H 9950 1500 50  0001 C CNN
 F 1 "LightPipe" H 9878 1500 50  0000 L CNN
 F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 1500 50  0001 C CNN
 F 3 "" V 9800 1500 50  0001 C CNN
+F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
+F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
+F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 1500
 	1    0    0    -1  
 $EndComp
@@ -334,6 +368,10 @@ F 0 "SYM12" H 9950 1800 50  0001 C CNN
 F 1 "LightPipe" H 9878 1800 50  0000 L CNN
 F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 1800 50  0001 C CNN
 F 3 "" V 9800 1800 50  0001 C CNN
+F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
+F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
+F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 1800
 	1    0    0    -1  
 $EndComp
@@ -347,6 +385,10 @@ F 0 "SYM13" H 9950 2100 50  0001 C CNN
 F 1 "LightPipe" H 9878 2100 50  0000 L CNN
 F 2 "CalinGeneric:SLP3-xxx-150-x" H 9800 2100 50  0001 C CNN
 F 3 "" V 9800 2100 50  0001 C CNN
+F 4 "LightPipe" H 0   0   50  0001 C CNN "characteristics"
+F 5 "BIVAR" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SLP3-XXX-XXX-X" H 0   0   50  0001 C CNN "package"
+F 7 "SLP3-150-xxx-F" H 0   0   50  0001 C CNN "part-number"
 	1    9800 2100
 	1    0    0    -1  
 $EndComp
@@ -368,9 +410,13 @@ P 2200 6250
 AR Path="/5CC095F4" Ref="R?"  Part="1" 
 AR Path="/5CCB086C/5CC095F4" Ref="R40"  Part="1" 
 F 0 "R40" V 2280 6250 40  0000 C CNN
-F 1 "10K" V 2200 6250 40  0000 C CNN
+F 1 "10k" V 2200 6250 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 2130 6250 30  0001 C CNN
 F 3 "" H 2200 6250 30  0000 C CNN
+F 4 "10k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CRCW080510K0FKEA" H 0   0   50  0001 C CNN "part-number"
 	1    2200 6250
 	0    1    1    0   
 $EndComp
@@ -381,9 +427,13 @@ P 2200 6850
 AR Path="/5CC096FF" Ref="R?"  Part="1" 
 AR Path="/5CCB086C/5CC096FF" Ref="R41"  Part="1" 
 F 0 "R41" V 2280 6850 40  0000 C CNN
-F 1 "10K" V 2200 6850 40  0000 C CNN
+F 1 "10k" V 2200 6850 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 2130 6850 30  0001 C CNN
 F 3 "" H 2200 6850 30  0000 C CNN
+F 4 "10k" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CRCW080510K0FKEA" H 0   0   50  0001 C CNN "part-number"
 	1    2200 6850
 	0    1    1    0   
 $EndComp
@@ -394,7 +444,11 @@ P 2650 6250
 F 0 "Q40" H 2841 6296 50  0000 L CNN
 F 1 "BC817" H 2841 6205 50  0000 L CNN
 F 2 "CalinGeneric:SOT-23" H 2850 6175 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2650 6250 50  0001 L CNN
+F 3 "" H 2650 6250 50  0001 L CNN
+F 4 "BC817-40" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Diodes" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SOT-23" H 0   0   50  0001 C CNN "package"
+F 7 "BC817-40Q" H 0   0   50  0001 C CNN "part-number"
 	1    2650 6250
 	1    0    0    -1  
 $EndComp
@@ -405,7 +459,11 @@ P 2650 6850
 F 0 "Q41" H 2841 6804 50  0000 L CNN
 F 1 "BC817" H 2841 6895 50  0000 L CNN
 F 2 "CalinGeneric:SOT-23" H 2850 6775 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2650 6850 50  0001 L CNN
+F 3 "" H 2650 6850 50  0001 L CNN
+F 4 "BC817-40" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Diodes" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "SOT-23" H 0   0   50  0001 C CNN "package"
+F 7 "BC817-40Q" H 0   0   50  0001 C CNN "part-number"
 	1    2650 6850
 	1    0    0    1   
 $EndComp
@@ -461,11 +519,15 @@ F 0 "U10" H 7700 1900 50  0000 C CNN
 F 1 "PCA9633DP1" H 7700 1400 50  0000 C CNN
 F 2 "CalinGeneric:TSSOP8-SOT505-1-HS" H 7700 1650 50  0001 C CNN
 F 3 "" H 7700 1650 50  0001 C CNN
+F 4 "4-bit Fm+ I2C-bus LED driver" H 0   0   50  0001 C CNN "characteristics"
+F 5 "NXP Semiconductors" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "TSSOP8 (SOT505-1)" H 0   0   50  0001 C CNN "package"
+F 7 "PCA9633DP1" H 0   0   50  0001 C CNN "part-number"
 	1    7700 1650
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CBE9333
 P 6500 1650
 AR Path="/5CBE9333" Ref="C?"  Part="1" 
@@ -474,6 +536,10 @@ F 0 "C10" H 6525 1750 50  0000 L CNN
 F 1 "100nF" V 6550 1350 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 6538 1500 50  0001 C CNN
 F 3 "" H 6500 1650 50  0000 C CNN
+F 4 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    6500 1650
 	1    0    0    -1  
 $EndComp
@@ -591,6 +657,11 @@ F 0 "U41" H 7700 5650 60  0000 C CNN
 F 1 "HIH8000_I2C" H 7700 5150 60  0000 C CNN
 F 2 "CalinGeneric:SOIC-8-HS" H 7700 5400 60  0001 C CNN
 F 3 "" H 7700 5400 60  0000 C CNN
+F 4 "HIH" H 0   0   50  0001 C CNN "Variant"
+F 5 "HIH8130-021-001 / HIH8131-021-001" H 0   0   50  0001 C CNN "part-number"
+F 6 "+/- 2.0 RH Accuracy" H 0   0   50  0001 C CNN "characteristics"
+F 7 "Honeywell" H 0   0   50  0001 C CNN "manufacturer"
+F 8 "SOIC-8 3.90mm" H 0   0   50  0001 C CNN "package"
 	1    7700 5400
 	1    0    0    -1  
 $EndComp
@@ -629,7 +700,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 5350 7250 5750
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CBF000C
 P 6500 5500
 AR Path="/5CBF000C" Ref="C?"  Part="1" 
@@ -638,11 +709,16 @@ F 0 "C41" H 6525 5600 50  0000 L CNN
 F 1 "100nF" V 6550 5200 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 6538 5350 50  0001 C CNN
 F 3 "" H 6500 5500 50  0000 C CNN
+F 4 "HIH" H 0   0   50  0001 C CNN "Variant"
+F 5 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 6 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 7 "0805" H 0   0   50  0001 C CNN "package"
+F 8 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    6500 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CBF00B7
 P 8400 5500
 AR Path="/5CBF00B7" Ref="C?"  Part="1" 
@@ -651,6 +727,11 @@ F 0 "C42" H 8425 5600 50  0000 L CNN
 F 1 "100nF" V 8450 5200 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 8438 5350 50  0001 C CNN
 F 3 "" H 8400 5500 50  0000 C CNN
+F 4 "HIH" H 0   0   50  0001 C CNN "Variant"
+F 5 "100 nF / 50V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 6 "Samsung" H 0   0   50  0001 C CNN "manufacturer"
+F 7 "0805" H 0   0   50  0001 C CNN "package"
+F 8 "CL21B104KBCNNNC" H 0   0   50  0001 C CNN "part-number"
 	1    8400 5500
 	1    0    0    -1  
 $EndComp
@@ -714,15 +795,19 @@ Wire Wire Line
 Wire Wire Line
 	6500 5250 6500 5350
 $Comp
-L Device:C C?
+L calin:C C?
 U 1 1 5CC12D9F
 P 6150 1650
 AR Path="/5CC12D9F" Ref="C?"  Part="1" 
 AR Path="/5CCB086C/5CC12D9F" Ref="C11"  Part="1" 
 F 0 "C11" H 6175 1750 50  0000 L CNN
-F 1 "1uF" V 6200 1450 50  0000 L CNN
+F 1 "4,7uF" V 6200 1500 50  0000 C CNN
 F 2 "CalinGeneric:C0805HS" H 6188 1500 50  0001 C CNN
 F 3 "" H 6150 1650 50  0000 C CNN
+F 4 "4.7 µF / 16 V / X7R" H 0   0   50  0001 C CNN "characteristics"
+F 5 "AVX" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "0805" H 0   0   50  0001 C CNN "package"
+F 7 "0805YC475KAT2A" H 0   0   50  0001 C CNN "part-number"
 	1    6150 1650
 	1    0    0    -1  
 $EndComp
