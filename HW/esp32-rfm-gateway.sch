@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
 Date "2019-05-02"
-Rev "34"
+Rev "35"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -658,12 +658,12 @@ Wire Wire Line
 $Comp
 L calin:ESP32_Strapping_Pins #SYM1
 U 1 1 5C6162CE
-P 9400 6050
-F 0 "#SYM1" H 10250 6350 50  0000 L TNN
-F 1 "ESP32_Strapping_Pins" H 8600 6350 50  0000 L TNN
-F 2 "" H 9200 5850 50  0001 C CNN
-F 3 "" H 9200 5850 50  0001 C CNN
-	1    9400 6050
+P 4200 7100
+F 0 "#SYM1" H 5050 7400 50  0000 L TNN
+F 1 "ESP32_Strapping_Pins" H 3400 7400 50  0000 L TNN
+F 2 "" H 4000 6900 50  0001 C CNN
+F 3 "" H 4000 6900 50  0001 C CNN
+	1    4200 7100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -767,11 +767,11 @@ Wire Wire Line
 Wire Wire Line
 	5100 2400 5900 2400
 Text Label 5200 2500 0    50   ~ 0
-IO5
+LED2
 Text Label 5200 2300 0    50   ~ 0
-IO19
+LED0
 Text Label 5200 2400 0    50   ~ 0
-IO18
+LED1
 Wire Wire Line
 	5100 1700 5900 1700
 Wire Wire Line
@@ -1016,7 +1016,7 @@ SCL
 Text Label 7750 1400 0    50   ~ 0
 SDA
 Text Label 5200 2800 0    50   ~ 0
-IO4
+LED3
 Text Label 2900 2400 0    50   ~ 0
 ChargeStat
 NoConn ~ 3300 2300
@@ -1156,13 +1156,13 @@ F 6 "DNP" H 0   0   50  0001 C CNN "part-number"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 8600 3250 1600 900 
+S 8300 3250 1600 900 
 U 5CBFFED5
 F0 "Power Section" 50
 F1 "PowerSection.sch" 50
-F2 "ScaledInputVoltage" U L 8600 3550 50 
-F3 "ScaledBatteryVoltage" U L 8600 3700 50 
-F4 "ChargeStatus" U L 8600 3850 50 
+F2 "ScaledInputVoltage" U L 8300 3550 50 
+F3 "ScaledBatteryVoltage" U L 8300 3700 50 
+F4 "ChargeStatus" U L 8300 3850 50 
 $EndSheet
 $Comp
 L power:GND #PWR0103
@@ -1191,44 +1191,48 @@ Wire Wire Line
 	5650 4950 4850 4950
 Connection ~ 5650 4950
 $Sheet
-S 8600 4600 1600 850 
+S 8300 4600 1600 850 
 U 5CCB086C
 F0 "Additional Modules" 50
 F1 "AdditionalModules.sch" 50
-F2 "SDA" U L 8600 4750 50 
-F3 "SCL" U L 8600 4900 50 
-F4 "ESP-EN" U L 8600 5150 50 
-F5 "ESP-Boot" U L 8600 5300 50 
+F2 "SDA" U L 8300 4750 50 
+F3 "SCL" U L 8300 4900 50 
+F4 "ESP-EN" U L 8300 5150 50 
+F5 "ESP-Boot" U L 8300 5300 50 
+F6 "LEDc0" I R 9900 4800 50 
+F7 "LEDc1" I R 9900 4950 50 
+F8 "LEDc2" I R 9900 5100 50 
+F9 "LEDc3" I R 9900 5250 50 
 $EndSheet
-Text Label 8150 4750 0    50   ~ 0
+Text Label 7850 4750 0    50   ~ 0
 SDA
-Text Label 8150 4900 0    50   ~ 0
+Text Label 7850 4900 0    50   ~ 0
 SCL
 Text Notes 1250 6600 0    50   Italic 0
 U30 (RFM9x) is a placeholder compatible with:\n- RFM69HCW\n- RFM95W\n- RFM96W\n- RFM97W\n- RFM98W
-Text Label 8150 3700 0    50   ~ 0
+Text Label 7850 3700 0    50   ~ 0
 ADC_Batt
-Text Label 8150 3550 0    50   ~ 0
+Text Label 7850 3550 0    50   ~ 0
 ADC_Vin
-Text Label 8150 3850 0    50   ~ 0
+Text Label 7850 3850 0    50   ~ 0
 ChargeStat
 Wire Wire Line
-	8600 3550 8100 3550
+	8300 3550 7800 3550
 Wire Wire Line
-	8600 3700 8100 3700
+	8300 3700 7800 3700
 Wire Wire Line
-	8600 3850 8100 3850
+	8300 3850 7800 3850
 Wire Wire Line
-	8600 4750 8100 4750
+	8300 4750 7800 4750
 Wire Wire Line
-	8600 4900 8100 4900
+	8300 4900 7800 4900
 Wire Wire Line
-	8600 5150 8100 5150
+	8300 5150 7800 5150
 Wire Wire Line
-	8600 5300 8100 5300
-Text Label 8150 5300 0    50   ~ 0
+	8300 5300 7800 5300
+Text Label 7850 5300 0    50   ~ 0
 Boot
-Text Label 8150 5150 0    50   ~ 0
+Text Label 7850 5150 0    50   ~ 0
 Reset
 $Comp
 L calin:CS_4 J8
@@ -1275,98 +1279,20 @@ Text Label 8750 1300 0    50   ~ 0
 SCL
 Text Label 8750 1400 0    50   ~ 0
 SDA
-$Comp
-L calin:CS_1 J10
-U 1 1 5CC44237
-P 9300 1900
-F 0 "J10" H 9400 1900 60  0000 L CNN
-F 1 "CS_1" H 9600 1900 50  0000 L CNN
-F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 1900 60  0001 C CNN
-F 3 "" H 9300 1900 60  0000 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
-F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
-	1    9300 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L calin:CS_1 J11
-U 1 1 5CC442FF
-P 9300 2050
-F 0 "J11" H 9400 2050 60  0000 L CNN
-F 1 "CS_1" H 9600 2050 50  0000 L CNN
-F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2050 60  0001 C CNN
-F 3 "" H 9300 2050 60  0000 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
-F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
-	1    9300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L calin:CS_1 J12
-U 1 1 5CC44353
-P 9300 2200
-F 0 "J12" H 9400 2200 60  0000 L CNN
-F 1 "CS_1" H 9600 2200 50  0000 L CNN
-F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2200 60  0001 C CNN
-F 3 "" H 9300 2200 60  0000 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
-F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
-	1    9300 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L calin:CS_1 J13
-U 1 1 5CC443A9
-P 9300 2350
-F 0 "J13" H 9400 2350 60  0000 L CNN
-F 1 "CS_1" H 9600 2350 50  0000 L CNN
-F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2350 60  0001 C CNN
-F 3 "" H 9300 2350 60  0000 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
-F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
-	1    9300 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L calin:CS_1 J14
-U 1 1 5CC44401
-P 9300 2500
-F 0 "J14" H 9400 2500 60  0000 L CNN
-F 1 "CS_1" H 9600 2500 50  0000 L CNN
-F 2 "CalinConnectors:SMD_Pins_1x1" H 9300 2500 60  0001 C CNN
-F 3 "" H 9300 2500 60  0000 C CNN
-F 4 "DNP" H 0   0   50  0001 C CNN "Notes"
-F 5 "pcb" H 0   0   50  0001 C CNN "Variant"
-	1    9300 2500
-	1    0    0    -1  
-$EndComp
+Text Label 10150 5250 0    50   ~ 0
+LED3
+Text Label 10150 5100 0    50   ~ 0
+LED2
+Text Label 10150 4950 0    50   ~ 0
+LED1
+Text Label 10150 4800 0    50   ~ 0
+LED0
 Wire Wire Line
-	9150 1900 8650 1900
+	9900 4800 10400 4800
 Wire Wire Line
-	9150 2050 8650 2050
+	9900 4950 10400 4950
 Wire Wire Line
-	9150 2200 8650 2200
+	9900 5100 10400 5100
 Wire Wire Line
-	9150 2500 8650 2500
-$Comp
-L power:GND #PWR0180
-U 1 1 5CC64F5B
-P 9050 2350
-F 0 "#PWR0180" H 9050 2100 50  0001 C CNN
-F 1 "GND" V 9050 2150 50  0000 C CNN
-F 2 "" H 9050 2350 50  0000 C CNN
-F 3 "" H 9050 2350 50  0000 C CNN
-	1    9050 2350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 2350 9050 2350
-Text Label 8750 2500 0    50   ~ 0
-IO4
-Text Label 8750 2200 0    50   ~ 0
-IO5
-Text Label 8750 2050 0    50   ~ 0
-IO18
-Text Label 8750 1900 0    50   ~ 0
-IO19
+	9900 5250 10400 5250
 $EndSCHEMATC

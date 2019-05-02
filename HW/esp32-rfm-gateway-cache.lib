@@ -94,24 +94,6 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# calin_CS_1
-#
-DEF calin_CS_1 J 0 40 Y N 1 F N
-F0 "J" 0 100 60 H V C CNN
-F1 "calin_CS_1" 150 0 50 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-F4 "*" 0 300 50 H I C CNN "manufacturer"
-F5 "*" 0 350 50 H I C CNN "part-number"
-F6 "*" 0 400 50 H I C CNN "characteristics"
-F7 "*" 0 450 50 H I C CNN "package"
-DRAW
-S -50 50 50 -50 0 1 0 N
-S -20 20 20 -20 0 1 0 F
-X 1 1 -150 0 150 R 25 25 1 1 P
-ENDDRAW
-ENDDEF
-#
 # calin_CS_2
 #
 DEF calin_CS_2 J 0 40 Y N 1 F N
@@ -486,33 +468,6 @@ X Vss 2 -550 0 300 R 50 50 1 1 P
 X Vbat 3 -550 -100 300 R 50 50 1 1 P
 X Vdd 4 550 -100 300 L 50 50 1 1 P
 X Prog 5 550 100 300 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# calin_PCA9633DP1
-#
-DEF calin_PCA9633DP1 U 0 40 Y Y 1 F N
-F0 "U" 0 250 50 H V C CNN
-F1 "calin_PCA9633DP1" 0 -250 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "NXP Semiconductors" 0 300 50 H I C CNN "manufacturer"
-F5 "PCA9633DP1" 0 350 50 H I C CNN "part-number"
-F6 "4-bit Fm+ I2C-bus LED driver" 0 400 50 H I C CNN "characteristics"
-F7 "TSSOP8 (SOT505-1)" 0 450 50 H I C CNN "package"
-$FPLIST
- SOT505-1
-$ENDFPLIST
-DRAW
-S -250 200 250 -200 0 1 0 f
-X LED0 1 -350 150 100 R 50 50 1 1 O
-X LED1 2 -350 50 100 R 50 50 1 1 O
-X LED2 3 -350 -50 100 R 50 50 1 1 O
-X LED3 4 -350 -150 100 R 50 50 1 1 O
-X Vss 5 350 -150 100 L 50 50 1 1 P
-X SCL 6 350 -50 100 L 50 50 1 1 P
-X SDA 7 350 50 100 L 50 50 1 1 P
-X Vdd 8 350 150 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
