@@ -302,27 +302,29 @@ T 0 -800 -100 50 0 0 0 "MTDO (GPIO15), pull-up (debug log print on U0TXD on boot
 ENDDRAW
 ENDDEF
 #
-# calin_HIH8000_I2C
+# calin_HDC1080DMB
 #
-DEF calin_HIH8000_I2C U 0 40 Y Y 1 F N
-F0 "U" 0 250 60 H V C CNN
-F1 "calin_HIH8000_I2C" 0 -250 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-F4 "Honeywell" 0 300 50 H I C CNN "manufacturer"
-F5 "HIH8130-021-001 / HIH8131-021-001" 0 350 50 H I C CNN "part-number"
-F6 "+/- 2.0 RH Accuracy" 0 400 50 H I C CNN "characteristics"
-F7 "SOIC-8 3.90mm" 0 450 50 H I C CNN "package"
+DEF calin_HDC1080DMB U 0 40 Y Y 1 F N
+F0 "U" 0 200 50 H V C CNN
+F1 "calin_HDC1080DMB" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Texas Instruments" 0 300 50 H I C CNN "manufacturer"
+F5 "HDC1080DMB" 0 350 50 H I C CNN "part-number"
+F6 "I2C Humidity and Temperature Sensor" 0 400 50 H I C CNN "characteristics"
+F7 "WSON6" 0 450 50 H I C CNN "package"
+$FPLIST
+ WSON6-TI-HDC
+$ENDFPLIST
 DRAW
-S -250 200 250 -200 0 1 0 f
-X Vcore 1 -350 150 100 R 50 39 1 1 P
-X Vss 2 -350 50 100 R 50 50 1 1 P
-X SCL 3 -350 -50 100 R 50 50 1 1 P
-X SDA 4 -350 -150 100 R 50 50 1 1 P
-X ALH 5 350 -150 100 L 50 50 1 1 P
-X ALL 6 350 -50 100 L 50 50 1 1 P
-X nc 7 350 50 100 L 50 50 1 1 N
-X Vdd 8 350 150 100 L 50 50 1 1 P
+S -200 150 200 -150 0 1 0 f
+X SDA 1 -300 100 100 R 50 50 1 1 P
+X Gnd 2 -300 0 100 R 50 50 1 1 P
+X nc 3 -300 -100 100 R 50 50 1 1 N
+X nc 4 300 -100 100 L 50 50 1 1 N
+X Vdd 5 300 0 100 L 50 50 1 1 W
+X SCL 6 300 100 100 L 50 50 1 1 P
+X nc 7 0 -250 100 U 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #

@@ -4,24 +4,6 @@
 
 ## TODO
 
-### Add component fields to schematic
-
-Fields to be added:
-
-- manufacturer
-- part-number
-- characteristics
-- package
-- variant
-- source
-- notes
-
-https://github.com/xesscorp/KiCost
-
-https://rheingoldheavy.com/category/education/kicad/
-
-https://github.com/SchrodingersGat/KiBoM
-
 ### Front panel
 
 After buying the cases and OLED displays, measure the case's front panel, design a custom one and make it to a fablab.
@@ -42,16 +24,34 @@ Use FreeCAD to build 3D packages:
 
 ## Solved, done or dropped
 
+### Component fields in schematic
+
+Added fields:
+
+- manufacturer
+- part-number
+- characteristics
+- package
+- variant
+- source
+- notes
+
+These are links with interesting informations regarding BOM:
+
+- https://github.com/xesscorp/KiCost
+- https://rheingoldheavy.com/category/education/kicad/
+- https://github.com/SchrodingersGat/KiBoM
+
 ### Sensors
 
-Added a HIH8000 series humidity and temperature sensor.
+Added a HDC1080 Humidity and Temperature Sensor.
+Removed: *Added a HIH8000 series humidity and temperature sensor.*
 
 ### LEDs and drivers
 
 Done, here are the selections I have made:
 
 - LED on the 5V rail
-- PCA9633 as LED driver
 - 4 LEDs (white, green, ...) + 4 resistors
 - light pipes
 

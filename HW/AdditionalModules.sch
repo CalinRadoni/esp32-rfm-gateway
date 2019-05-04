@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-05-02"
-Rev "35"
+Date "2019-05-03"
+Rev "36"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -520,22 +520,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 7100 2750 7050
 $Comp
-L calin:HIH8000_I2C U41
-U 1 1 5CBE66CD
-P 8250 5400
-F 0 "U41" H 8250 5650 60  0000 C CNN
-F 1 "HIH8000_I2C" H 8250 5150 60  0000 C CNN
-F 2 "CalinGeneric:SOIC-8-HS" H 8250 5400 60  0001 C CNN
-F 3 "" H 8250 5400 60  0000 C CNN
-F 4 "HIH" H 550 0   50  0001 C CNN "Variant"
-F 5 "HIH8130-021-001 / HIH8131-021-001" H 550 0   50  0001 C CNN "part-number"
-F 6 "+/- 2.0 RH Accuracy" H 550 0   50  0001 C CNN "characteristics"
-F 7 "Honeywell" H 550 0   50  0001 C CNN "manufacturer"
-F 8 "SOIC-8 3.90mm" H 550 0   50  0001 C CNN "package"
-	1    8250 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5CBEDDD9
 P 7800 5750
@@ -561,14 +545,6 @@ F 3 "" H 8700 5150 50  0000 C CNN
 	1    8700 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8700 5150 8700 5250
-Wire Wire Line
-	8700 5250 8600 5250
-Wire Wire Line
-	7900 5350 7800 5350
-Wire Wire Line
-	7800 5350 7800 5750
 $Comp
 L calin:C C?
 U 1 1 5CBF000C
@@ -579,7 +555,7 @@ F 0 "C41" H 7075 5600 50  0000 L CNN
 F 1 "100nF" V 7100 5200 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 7088 5350 50  0001 C CNN
 F 3 "" H 7050 5500 50  0000 C CNN
-F 4 "HIH" H 550 0   50  0001 C CNN "Variant"
+F 4 "Sensor" H 550 0   50  0001 C CNN "Variant"
 F 5 "100 nF / 50V / X7R" H 550 0   50  0001 C CNN "characteristics"
 F 6 "Samsung" H 550 0   50  0001 C CNN "manufacturer"
 F 7 "0805" H 550 0   50  0001 C CNN "package"
@@ -587,31 +563,9 @@ F 8 "CL21B104KBCNNNC" H 550 0   50  0001 C CNN "part-number"
 	1    7050 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L calin:C C?
-U 1 1 5CBF00B7
-P 9050 5500
-AR Path="/5CBF00B7" Ref="C?"  Part="1" 
-AR Path="/5CCB086C/5CBF00B7" Ref="C42"  Part="1" 
-F 0 "C42" H 9075 5600 50  0000 L CNN
-F 1 "100nF" V 9100 5200 50  0000 L CNN
-F 2 "CalinGeneric:C0805HS" H 9088 5350 50  0001 C CNN
-F 3 "" H 9050 5500 50  0000 C CNN
-F 4 "HIH" H 650 0   50  0001 C CNN "Variant"
-F 5 "100 nF / 50V / X7R" H 650 0   50  0001 C CNN "characteristics"
-F 6 "Samsung" H 650 0   50  0001 C CNN "manufacturer"
-F 7 "0805" H 650 0   50  0001 C CNN "package"
-F 8 "CL21B104KBCNNNC" H 650 0   50  0001 C CNN "part-number"
-	1    9050 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 5450 7350 5450
-Wire Wire Line
-	7900 5550 7350 5550
-Text Label 7500 5550 0    50   ~ 0
+Text Label 7500 5400 0    50   ~ 0
 SDA
-Text Label 7500 5450 0    50   ~ 0
+Text Label 7500 5250 0    50   ~ 0
 SCL
 $Comp
 L power:GND #PWR?
@@ -631,90 +585,20 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5CBF4B8D
-P 9050 5150
+P 7050 5150
 AR Path="/5CBF4B8D" Ref="#PWR?"  Part="1" 
 AR Path="/5CCB086C/5CBF4B8D" Ref="#PWR0174"  Part="1" 
-F 0 "#PWR0174" H 9050 5000 50  0001 C CNN
-F 1 "+3V3" H 9050 5290 50  0000 C CNN
-F 2 "" H 9050 5150 50  0000 C CNN
-F 3 "" H 9050 5150 50  0000 C CNN
-	1    9050 5150
+F 0 "#PWR0174" H 7050 5000 50  0001 C CNN
+F 1 "+3V3" H 7050 5290 50  0000 C CNN
+F 2 "" H 7050 5150 50  0000 C CNN
+F 3 "" H 7050 5150 50  0000 C CNN
+	1    7050 5150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CBF4BC0
-P 9050 5750
-AR Path="/5CBF4BC0" Ref="#PWR?"  Part="1" 
-AR Path="/5CCB086C/5CBF4BC0" Ref="#PWR0175"  Part="1" 
-F 0 "#PWR0175" H 9050 5500 50  0001 C CNN
-F 1 "GND" H 9050 5600 50  0000 C CNN
-F 2 "" H 9050 5750 50  0000 C CNN
-F 3 "" H 9050 5750 50  0000 C CNN
-	1    9050 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5750 9050 5650
-Wire Wire Line
-	9050 5350 9050 5150
-NoConn ~ 8600 5450
-NoConn ~ 8600 5550
-Wire Wire Line
-	7900 5250 7050 5250
-Wire Wire Line
-	7050 5250 7050 5350
-$Comp
-L calin:C C?
-U 1 1 5CC12D9F
-P 9400 5500
-AR Path="/5CC12D9F" Ref="C?"  Part="1" 
-AR Path="/5CCB086C/5CC12D9F" Ref="C43"  Part="1" 
-F 0 "C43" H 9425 5600 50  0000 L CNN
-F 1 "4,7uF" V 9450 5350 50  0000 C CNN
-F 2 "CalinGeneric:C0805HS" H 9438 5350 50  0001 C CNN
-F 3 "" H 9400 5500 50  0000 C CNN
-F 4 "4.7 µF / 16 V / X7R" H 3250 3850 50  0001 C CNN "characteristics"
-F 5 "AVX" H 3250 3850 50  0001 C CNN "manufacturer"
-F 6 "0805" H 3250 3850 50  0001 C CNN "package"
-F 7 "0805YC475KAT2A" H 3250 3850 50  0001 C CNN "part-number"
-	1    9400 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CC12DA5
-P 9400 5150
-AR Path="/5CC12DA5" Ref="#PWR?"  Part="1" 
-AR Path="/5CCB086C/5CC12DA5" Ref="#PWR0176"  Part="1" 
-F 0 "#PWR0176" H 9400 5000 50  0001 C CNN
-F 1 "+3V3" H 9400 5290 50  0000 C CNN
-F 2 "" H 9400 5150 50  0000 C CNN
-F 3 "" H 9400 5150 50  0000 C CNN
-	1    9400 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5CC12DAB
-P 9400 5750
-AR Path="/5CC12DAB" Ref="#PWR?"  Part="1" 
-AR Path="/5CCB086C/5CC12DAB" Ref="#PWR0177"  Part="1" 
-F 0 "#PWR0177" H 9400 5500 50  0001 C CNN
-F 1 "GND" H 9400 5600 50  0000 C CNN
-F 2 "" H 9400 5750 50  0000 C CNN
-F 3 "" H 9400 5750 50  0000 C CNN
-	1    9400 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 5150 9400 5350
-Wire Wire Line
-	9400 5650 9400 5750
 Text Notes 2200 4950 0    50   ~ 0
 Default I2C Address of:\n- ATSHA204A is 0xC8/0xC9\n- ATECC508A is 0xC0/0xC1\n- ATECC608A is 0xC4/0xC5 (probably)
-Text Notes 8000 6200 0    50   ~ 0
-Default I2C address is 0x27 (0x4E/0x4F)
+Text Notes 8350 5950 0    50   ~ 0
+Default I2C address is 1000000 (0x80/0x81)
 Wire Notes Line width 20 style dotted
 	5650 1100 5650 7100
 Wire Notes Line width 20 style dotted
@@ -741,4 +625,38 @@ Wire Wire Line
 	7700 1600 7200 1600
 Wire Wire Line
 	7700 1300 7200 1300
+$Comp
+L calin:HDC1080DMB U41
+U 1 1 5CCCFB95
+P 8200 5500
+F 0 "U41" H 8200 5700 50  0000 C CNN
+F 1 "HDC1080DMB" H 8200 5300 50  0000 C CNN
+F 2 "CalinGeneric:WSON6-TI-HDC-HS" H 8200 5500 50  0001 C CNN
+F 3 "" H 8200 5500 50  0001 C CNN
+F 4 "Texas Instruments" H 8200 5800 50  0001 C CNN "manufacturer"
+F 5 "HDC1080DMB" H 8200 5850 50  0001 C CNN "part-number"
+F 6 "I2C Humidity and Temperature Sensor" H 8200 5900 50  0001 C CNN "characteristics"
+F 7 "WSON6" H 8200 5950 50  0001 C CNN "package"
+F 8 "Sensor" H 0   0   50  0001 C CNN "Variant"
+	1    8200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5150 7050 5350
+Wire Wire Line
+	7900 5500 7800 5500
+Wire Wire Line
+	7800 5500 7800 5750
+Wire Wire Line
+	8700 5150 8700 5500
+Wire Wire Line
+	8700 5500 8500 5500
+Wire Wire Line
+	7900 5400 7400 5400
+Wire Wire Line
+	8500 5400 8600 5400
+Wire Wire Line
+	8600 5400 8600 5250
+Wire Wire Line
+	8600 5250 7400 5250
 $EndSCHEMATC
