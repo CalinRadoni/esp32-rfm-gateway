@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-05-03"
-Rev "36"
+Date "2019-05-04"
+Rev "37"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -1235,17 +1235,6 @@ Boot
 Text Label 7850 5150 0    50   ~ 0
 Reset
 $Comp
-L calin:CS_4 J8
-U 1 1 5CC3F23B
-P 9300 1250
-F 0 "J8" H 9300 1500 60  0000 C CNN
-F 1 "ph_1x4" V 9400 1250 50  0000 C CNN
-F 2 "CalinConnectors:Pin_Header_Straight_1x04" H 9300 1400 60  0001 C CNN
-F 3 "" H 9300 1400 60  0000 C CNN
-	1    9300 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0178
 U 1 1 5CC3F241
 P 9050 1200
@@ -1295,4 +1284,45 @@ Wire Wire Line
 	9900 5100 10400 5100
 Wire Wire Line
 	9900 5250 10400 5250
+$Comp
+L calin:CS_6 J8
+U 1 1 5CCEF234
+P 9300 1350
+F 0 "J8" H 9300 1700 60  0000 C CNN
+F 1 "ph_1x6" V 9400 1350 50  0000 C CNN
+F 2 "CalinConnectors:Pin_Header_Straight_1x06" H 9300 1600 60  0001 C CNN
+F 3 "" H 9300 1600 60  0000 C CNN
+F 4 "*" H 9300 1650 50  0001 C CNN "manufacturer"
+F 5 "*" H 9300 1700 50  0001 C CNN "part-number"
+F 6 "*" H 9300 1750 50  0001 C CNN "characteristics"
+F 7 "*" H 9300 1800 50  0001 C CNN "package"
+	1    9300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 5CCEF5ED
+P 9050 1500
+F 0 "#PWR0167" H 9050 1250 50  0001 C CNN
+F 1 "GND" V 9050 1300 50  0000 C CNN
+F 2 "" H 9050 1500 50  0000 C CNN
+F 3 "" H 9050 1500 50  0000 C CNN
+	1    9050 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0168
+U 1 1 5CCEF655
+P 9050 1600
+F 0 "#PWR0168" H 9050 1450 50  0001 C CNN
+F 1 "+3V3" V 9050 1800 50  0000 C CNN
+F 2 "" H 9050 1600 50  0000 C CNN
+F 3 "" H 9050 1600 50  0000 C CNN
+	1    9050 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 1500 9150 1500
+Wire Wire Line
+	9150 1600 9050 1600
 $EndSCHEMATC

@@ -211,6 +211,35 @@ X 5 5 -150 -200 150 R 25 25 1 1 P
 ENDDRAW
 ENDDEF
 #
+# calin_CS_6
+#
+DEF calin_CS_6 J 0 40 Y N 1 F N
+F0 "J" 0 350 60 H V C CNN
+F1 "calin_CS_6" 100 0 50 V V C CNN
+F2 "" 0 250 60 H V C CNN
+F3 "" 0 250 60 H V C CNN
+F4 "*" 0 300 50 H I C CNN "manufacturer"
+F5 "*" 0 350 50 H I C CNN "part-number"
+F6 "*" 0 400 50 H I C CNN "characteristics"
+F7 "*" 0 450 50 H I C CNN "package"
+DRAW
+S -50 300 50 -300 0 1 0 N
+S -20 -230 20 -270 0 1 0 F
+S -20 -130 20 -170 0 1 0 F
+S -20 -30 20 -70 0 1 0 F
+S -20 70 20 30 0 1 0 F
+S -20 170 20 130 0 1 0 F
+S -20 270 20 230 0 1 0 F
+P 2 0 1 0 50 200 -50 200 N
+X 1 1 -150 250 150 R 25 25 1 1 P
+X 2 2 -150 150 150 R 25 25 1 1 P
+X 3 3 -150 50 150 R 25 25 1 1 P
+X 4 4 -150 -50 150 R 25 25 1 1 P
+X 5 5 -150 -150 150 R 25 25 1 1 P
+X 6 6 -150 -250 150 R 25 25 1 1 P
+ENDDRAW
+ENDDEF
+#
 # calin_DiodeSchottky
 #
 DEF calin_DiodeSchottky D 0 40 N N 1 F N
