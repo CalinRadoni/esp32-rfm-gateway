@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-05-04"
-Rev "37"
+Date "2019-05-06"
+Rev "38"
 Comp "Calin Radoni"
 Comment1 ""
 Comment2 ""
@@ -659,4 +659,52 @@ Wire Wire Line
 	8600 5400 8600 5250
 Wire Wire Line
 	8600 5250 7400 5250
+$Comp
+L calin:C C?
+U 1 1 5CD1A826
+P 8200 3850
+AR Path="/5CD1A826" Ref="C?"  Part="1" 
+AR Path="/5CCB086C/5CD1A826" Ref="C10"  Part="1" 
+F 0 "C10" H 8225 3950 50  0000 L CNN
+F 1 "10uF" V 8250 3550 50  0000 L CNN
+F 2 "CalinGeneric:C0805HS" H 8238 3700 50  0001 C CNN
+F 3 "" H 8200 3850 50  0000 C CNN
+F 4 "test" H 1700 -1650 50  0001 C CNN "Variant"
+F 5 "10 µF / 6,3 V" H 1700 -1650 50  0001 C CNN "characteristics"
+F 6 "Samsung" H 1700 -1650 50  0001 C CNN "manufacturer"
+F 7 "0805" H 1700 -1650 50  0001 C CNN "package"
+F 8 "CL21B106KQQNNNE" H 1700 -1650 50  0001 C CNN "part-number"
+	1    8200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD1A82C
+P 8200 4100
+AR Path="/5CD1A82C" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CD1A82C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8200 3850 50  0001 C CNN
+F 1 "GND" H 8200 3950 50  0000 C CNN
+F 2 "" H 8200 4100 50  0000 C CNN
+F 3 "" H 8200 4100 50  0000 C CNN
+	1    8200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4000 8200 4100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CD1A833
+P 8200 3600
+AR Path="/5CD1A833" Ref="#PWR?"  Part="1" 
+AR Path="/5CCB086C/5CD1A833" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8200 3450 50  0001 C CNN
+F 1 "+3V3" H 8200 3740 50  0000 C CNN
+F 2 "" H 8200 3600 50  0000 C CNN
+F 3 "" H 8200 3600 50  0000 C CNN
+	1    8200 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3600 8200 3700
 $EndSCHEMATC
