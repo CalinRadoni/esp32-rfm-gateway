@@ -6,16 +6,22 @@ The purpose of this gateway is to either:
 - conect a RFM69 network to Wi-Fi
 - conect a LoRa&trade; network to Wi-Fi
 
+The gateway was designed for power efficiency without sacrificing functionality.
+
 **Status:** *this is work in progress !*
 
 ## Features
 
 - the core is a ESP32-WROOM-32x Wi-Fi+BT+BLE module
-- RFM69HCW / RFM95/96/97/98(W) module
+- RFM69HCW or RFM95/96/97/98(W) module
 - Li-Ion / Li-Polymer battery charger
-- Li-Ion / Li-Polymer backup battery with 18650 and 14500 sockets
+- Li-Ion / Li-Polymer backup battery with 18650 or 14500 sockets
 - high efficiency synchronous buck converter
 - supply voltage supervisor
+- 4 LEDs for status
+- humidity and temperature sensor
+- placeholder for ATSHA204A, ATECC508A or ATECC608A IC
+- (*optional*) boot mode selection using DTR and RTS signal
 
 ## Software
 
@@ -42,7 +48,7 @@ See the __LICENSE-CC-BY-SA-4.0.txt__ file.
 
 ## Versions
 
-...soon...
+Hardware revision 38 from 2019.05.06 is the one to be send to a PCB factory.
 
 ## About RFM modules
 
