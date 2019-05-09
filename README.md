@@ -48,7 +48,7 @@ See the __LICENSE-CC-BY-SA-4.0.txt__ file.
 
 ## Versions
 
-Hardware revision 38 from 2019.05.06 is the one to be send to a PCB factory.
+Version 0.11 (hardware revision 38 from 2019.05.06) is the one to be sent to a PCB factory.
 
 ## About RFM modules
 
