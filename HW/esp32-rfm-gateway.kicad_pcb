@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 67)
+    (drawings 68)
     (tracks 766)
     (zones 0)
     (modules 89)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.9)
+    (last_trace_width 0.25)
     (user_trace_width 0.45)
     (user_trace_width 0.6)
     (user_trace_width 0.7)
@@ -2445,6 +2445,18 @@
     )
   )
 
+  (dimension 99 (width 0.3) (layer Dwgs.User)
+    (gr_text "99,000 mm" (at 85.5 140.85) (layer Dwgs.User)
+      (effects (font (size 1.5 1.5) (thickness 0.3)))
+    )
+    (feature1 (pts (xy 135 137.75) (xy 135 139.336421)))
+    (feature2 (pts (xy 36 137.75) (xy 36 139.336421)))
+    (crossbar (pts (xy 36 138.75) (xy 135 138.75)))
+    (arrow1a (pts (xy 135 138.75) (xy 133.873496 139.336421)))
+    (arrow1b (pts (xy 135 138.75) (xy 133.873496 138.163579)))
+    (arrow2a (pts (xy 36 138.75) (xy 37.126504 139.336421)))
+    (arrow2b (pts (xy 36 138.75) (xy 37.126504 138.163579)))
+  )
   (gr_poly (pts (xy 106.75 107.25) (xy 108.25 107.25) (xy 107.5 108.25)) (layer F.SilkS) (width 0.15) (tstamp 5CCF498F))
   (gr_line (start 104.25 107.5) (end 105.75 107.5) (layer F.SilkS) (width 0.5) (tstamp 5CCF496F))
   (gr_line (start 105 106.75) (end 105 108.25) (layer F.SilkS) (width 0.5) (tstamp 5CCF496C))

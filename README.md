@@ -8,7 +8,7 @@ The purpose of this gateway is to either:
 
 The gateway was designed for power efficiency without sacrificing functionality.
 
-**Status:** *this is work in progress !*
+**Status:** (*this is work in progress !*)
 
 ## Features
 
@@ -39,16 +39,21 @@ Tools:
 - [GIMP](https://www.gimp.org/)
 - [Inkscape](https://inkscape.org/en/)
 
+## Versions
+
+### Version 1
+
+- *Fab* files are moved to the Fab-v1 directory
+- Gerbers and drill files are sent to SeeedStudio for PCB fabrication
+- BOM is in the making and components have to be sourced
+- I should start to write some software
+
 ## License
 
 The software and documentation are released under the [GNU GPLv3](http://www.gnu.org/licenses/gpl-3.0.html) License. See the __LICENSE-GPLv3.txt__ file.
 
 The hardware schematics are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 See the __LICENSE-CC-BY-SA-4.0.txt__ file.
-
-## Versions
-
-Version 0.11 (hardware revision 38 from 2019.05.06) is the one to be sent to a PCB factory.
 
 ## About RFM modules
 
