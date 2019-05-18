@@ -683,8 +683,8 @@ L power:GND #PWR?
 U 1 1 5CD1A82C
 P 8200 4100
 AR Path="/5CD1A82C" Ref="#PWR?"  Part="1" 
-AR Path="/5CCB086C/5CD1A82C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8200 3850 50  0001 C CNN
+AR Path="/5CCB086C/5CD1A82C" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 8200 3850 50  0001 C CNN
 F 1 "GND" H 8200 3950 50  0000 C CNN
 F 2 "" H 8200 4100 50  0000 C CNN
 F 3 "" H 8200 4100 50  0000 C CNN
@@ -698,8 +698,8 @@ L power:+3V3 #PWR?
 U 1 1 5CD1A833
 P 8200 3600
 AR Path="/5CD1A833" Ref="#PWR?"  Part="1" 
-AR Path="/5CCB086C/5CD1A833" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8200 3450 50  0001 C CNN
+AR Path="/5CCB086C/5CD1A833" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 8200 3450 50  0001 C CNN
 F 1 "+3V3" H 8200 3740 50  0000 C CNN
 F 2 "" H 8200 3600 50  0000 C CNN
 F 3 "" H 8200 3600 50  0000 C CNN
@@ -708,4 +708,34 @@ F 3 "" H 8200 3600 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	8200 3600 8200 3700
+$Comp
+L calin:Symbol_Enclosure SYM9
+U 1 1 5CE0FF1C
+P 3800 2650
+F 0 "SYM9" H 4050 2650 50  0001 C CNN
+F 1 "Enclosure" H 3978 2675 50  0000 L CNN
+F 2 "CalinGeneric:VirtualFootprint" H 3800 2650 50  0001 C CNN
+F 3 "" H 3800 2650 50  0001 C CNN
+F 4 "Gainta G706 (dark grey) or G738 (light grey)" H 800 50  50  0001 C CNN "characteristics"
+F 5 "Gainta" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "*" H 0   0   50  0001 C CNN "package"
+F 7 "Gainta G706" H 0   0   50  0001 C CNN "part-number"
+	1    3800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L calin:Symbol_Antenna SYM6
+U 1 1 5CE1322C
+P 3900 2200
+F 0 "SYM6" H 4050 2250 50  0001 C CNN
+F 1 "Antenna 868MHz" H 3950 2200 50  0000 L CNN
+F 2 "CalinGeneric:VirtualFootprint" H 3900 2200 50  0001 C CNN
+F 3 "" H 3900 2200 50  0001 C CNN
+F 4 "868 MHz, 90 deg. SMA Male connector" H 0   -150 50  0001 C CNN "characteristics"
+F 5 "SR Passives" H 0   -150 50  0001 C CNN "manufacturer"
+F 6 "*" H 0   -150 50  0001 C CNN "package"
+F 7 "868M-ANT410" H 0   -150 50  0001 C CNN "part-number"
+	1    3900 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
