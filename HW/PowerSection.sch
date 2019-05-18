@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-05-06"
+Date "2019-05-18"
 Rev "38"
 Comp "Calin Radoni"
 Comment1 ""
@@ -190,6 +190,7 @@ F 1 "ph_1x2" V 9350 3150 50  0000 C CNN
 F 2 "CalinConnectors:Pin_Header_Angled_1x02" H 9250 3200 60  0001 C CNN
 F 3 "" H 9250 3200 60  0000 C CNN
 F 4 "test" H 0   0   50  0001 C CNN "Variant"
+F 5 "DNP" H 0   0   50  0001 C CNN "Notes"
 	1    9250 3150
 	-1   0    0    -1  
 $EndComp
@@ -221,6 +222,7 @@ F 1 "ph_1x3" V 7950 3100 50  0000 C CNN
 F 2 "CalinConnectors:Pin_Header_Angled_1x03" H 7850 3200 60  0001 C CNN
 F 3 "" H 7850 3200 60  0000 C CNN
 F 4 "test" H 0   0   50  0001 C CNN "Variant"
+F 5 "DNP" H 0   0   50  0001 C CNN "Notes"
 	1    7850 3100
 	-1   0    0    -1  
 $EndComp
@@ -470,6 +472,9 @@ F 1 "s18650" V 3900 4700 50  0000 L CNN
 F 2 "CalinConnectors:KEYS-1043" H 3800 5000 60  0001 C CNN
 F 3 "" H 3800 5000 60  0000 C CNN
 F 4 "18650" H 0   0   50  0001 C CNN "Variant"
+F 5 "Keystone" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "*" H 0   0   50  0001 C CNN "package"
+F 7 "KEYS1043" H 0   0   50  0001 C CNN "part-number"
 	1    3800 4950
 	1    0    0    -1  
 $EndComp
@@ -571,13 +576,13 @@ P 2450 1800
 AR Path="/5CC2CB28" Ref="U?"  Part="1" 
 AR Path="/5CBFFED5/5CC2CB28" Ref="U20"  Part="1" 
 F 0 "U20" H 2450 2000 60  0000 C CNN
-F 1 "IRM-05" H 2450 1600 60  0000 C CNN
+F 1 "IRM-10-5" H 2450 1600 60  0000 C CNN
 F 2 "CalinGeneric:IRM222A" H 2450 1800 60  0001 C CNN
 F 3 "" H 2450 1800 60  0001 C CNN
-F 4 "5W AC-DC module-type power supply" H 0   0   50  0001 C CNN "characteristics"
+F 4 "10W AC-DC module-type power supply" H 0   0   50  0001 C CNN "characteristics"
 F 5 "Mean Well" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "222A" H 0   0   50  0001 C CNN "package"
-F 7 "IRM-05" H 0   0   50  0001 C CNN "part-number"
+F 7 "IRM-10-5" H 0   0   50  0001 C CNN "part-number"
 	1    2450 1800
 	1    0    0    -1  
 $EndComp
@@ -615,7 +620,7 @@ F 3 "" H 7700 1750 50  0001 C CNN
 F 4 "Standard CMOS Voltage Detector IC 3.5V" H 0   0   50  0001 C CNN "characteristics"
 F 5 "ROHM Semiconductor" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SSOP3 (SOT23-3)" H 0   0   50  0001 C CNN "package"
-F 7 "BD49K35" H 0   0   50  0001 C CNN "part-number"
+F 7 "BD49K37G-TL" H 0   0   50  0001 C CNN "part-number"
 	1    7700 1750
 	1    0    0    -1  
 $EndComp
@@ -897,6 +902,7 @@ F 5 "Vishay" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "0805" H 0   0   50  0001 C CNN "package"
 F 7 "DNP" H 0   0   50  0001 C CNN "part-number"
 F 8 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 9 "DNP" H 0   0   50  0001 C CNN "Variant"
 	1    2750 4200
 	0    1    1    0   
 $EndComp
@@ -997,10 +1003,10 @@ F 0 "R20" V 1780 4950 40  0000 C CNN
 F 1 "2k2" V 1700 4950 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 1630 4950 30  0001 C CNN
 F 3 "" H 1700 4950 30  0000 C CNN
-F 4 "2k" H 0   0   50  0001 C CNN "characteristics"
+F 4 "2k2" H 0   0   50  0001 C CNN "characteristics"
 F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "0805" H 0   0   50  0001 C CNN "package"
-F 7 "ERJ6ENF2001V" H 0   0   50  0001 C CNN "part-number"
+F 7 "ERJ-6ENF2201V" H 0   0   50  0001 C CNN "part-number"
 	1    1700 4950
 	1    0    0    -1  
 $EndComp
@@ -1270,7 +1276,7 @@ F 2 "CalinGeneric:C0805HS" H 9638 1600 50  0001 C CNN
 F 3 "" H 9600 1750 50  0000 C CNN
 F 4 "Taiyo Yuden" H 0   0   50  0001 C CNN "manufacturer"
 F 5 "0805" H 0   0   50  0001 C CNN "package"
-F 6 "JMK212BJ226MG-T" H 0   0   50  0001 C CNN "part-number"
+F 6 "JMK212BBJ226MGHT" H 0   0   50  0001 C CNN "part-number"
 F 7 "22 µF / 6.3 V / X5R / ESR: 1 mΩ" H 0   0   50  0001 C CNN "characteristics"
 	1    9600 1750
 	1    0    0    -1  
@@ -1287,8 +1293,8 @@ F 2 "CalinGeneric:C0805HS" H 7038 1500 50  0001 C CNN
 F 3 "" H 7000 1650 50  0000 C CNN
 F 4 "Taiyo Yuden" H 0   0   50  0001 C CNN "manufacturer"
 F 5 "0805" H 0   0   50  0001 C CNN "package"
-F 6 "10 µF / 16 V / X7R / ESR: 1 mΩ" H 0   0   50  0001 C CNN "characteristics"
-F 7 "EMK212BB7106KG-T" H 0   0   50  0001 C CNN "part-number"
+F 6 "10 µF / 10 V / X5R / ESR: 1 mΩ" H 0   0   50  0001 C CNN "characteristics"
+F 7 "EMK212BJ106KG-T" H 0   0   50  0001 C CNN "part-number"
 	1    7000 1650
 	1    0    0    -1  
 $EndComp
@@ -1412,4 +1418,6 @@ Wire Wire Line
 	3600 1200 3500 1200
 Wire Wire Line
 	3200 1200 3100 1200
+Text Notes 3000 3850 0    50   Italic 10
+Do NOT connect D20 and R21 if ChargeStat\nis connected to pins that\ndo not support 5V voltages !
 $EndSCHEMATC

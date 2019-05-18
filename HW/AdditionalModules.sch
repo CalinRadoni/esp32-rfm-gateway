@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-05-06"
+Date "2019-05-18"
 Rev "38"
 Comp "Calin Radoni"
 Comment1 ""
@@ -29,6 +29,7 @@ F 5 "ATSHA204A/ATECC508A/ATECC608A-SSHDA" H 0   -200 50  0001 C CNN "part-number
 F 6 "*" H 0   -200 50  0001 C CNN "characteristics"
 F 7 "Microchip" H 0   -200 50  0001 C CNN "manufacturer"
 F 8 "SOIC-8 3.90mm" H 0   -200 50  0001 C CNN "package"
+F 9 "DNP" H 0   0   50  0001 C CNN "Notes"
 	1    2200 4250
 	1    0    0    -1  
 $EndComp
@@ -47,6 +48,7 @@ F 5 "100 nF / 50V / X7R" H 0   -200 50  0001 C CNN "characteristics"
 F 6 "Samsung" H 0   -200 50  0001 C CNN "manufacturer"
 F 7 "0805" H 0   -200 50  0001 C CNN "package"
 F 8 "CL21B104KBCNNNC" H 0   -200 50  0001 C CNN "part-number"
+F 9 "DNP" H 0   0   50  0001 C CNN "Notes"
 	1    1350 4250
 	1    0    0    -1  
 $EndComp
@@ -448,7 +450,7 @@ F 3 "" H 2650 6250 50  0001 L CNN
 F 4 "BC817-40" H 0   0   50  0001 C CNN "characteristics"
 F 5 "Diodes" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SOT-23" H 0   0   50  0001 C CNN "package"
-F 7 "BC817-40Q" H 0   0   50  0001 C CNN "part-number"
+F 7 "BC817-40" H 0   0   50  0001 C CNN "part-number"
 	1    2650 6250
 	1    0    0    -1  
 $EndComp
@@ -463,7 +465,7 @@ F 3 "" H 2650 6850 50  0001 L CNN
 F 4 "BC817-40" H 0   0   50  0001 C CNN "characteristics"
 F 5 "Diodes" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SOT-23" H 0   0   50  0001 C CNN "package"
-F 7 "BC817-40Q" H 0   0   50  0001 C CNN "part-number"
+F 7 "BC817-40" H 0   0   50  0001 C CNN "part-number"
 	1    2650 6850
 	1    0    0    1   
 $EndComp
@@ -669,11 +671,10 @@ F 0 "C10" H 8225 3950 50  0000 L CNN
 F 1 "10uF" V 8250 3550 50  0000 L CNN
 F 2 "CalinGeneric:C0805HS" H 8238 3700 50  0001 C CNN
 F 3 "" H 8200 3850 50  0000 C CNN
-F 4 "test" H 1700 -1650 50  0001 C CNN "Variant"
-F 5 "10 µF / 6,3 V" H 1700 -1650 50  0001 C CNN "characteristics"
-F 6 "Samsung" H 1700 -1650 50  0001 C CNN "manufacturer"
-F 7 "0805" H 1700 -1650 50  0001 C CNN "package"
-F 8 "CL21B106KQQNNNE" H 1700 -1650 50  0001 C CNN "part-number"
+F 4 "10 µF / 6,3 V" H 1700 -1650 50  0001 C CNN "characteristics"
+F 5 "Samsung" H 1700 -1650 50  0001 C CNN "manufacturer"
+F 6 "0805" H 1700 -1650 50  0001 C CNN "package"
+F 7 "CL21B106KQQNNNE" H 1700 -1650 50  0001 C CNN "part-number"
 	1    8200 3850
 	1    0    0    -1  
 $EndComp

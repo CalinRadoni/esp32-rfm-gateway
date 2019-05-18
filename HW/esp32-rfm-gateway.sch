@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "ESP32 RFM69/RFM9x Gateway"
-Date "2019-05-06"
+Date "2019-05-18"
 Rev "38"
 Comp "Calin Radoni"
 Comment1 ""
@@ -86,6 +86,8 @@ F 4 "*" H 0   0   50  0001 C CNN "characteristics"
 F 5 "*" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "0805" H 0   0   50  0001 C CNN "package"
 F 7 "DNP" H 0   0   50  0001 C CNN "part-number"
+F 8 "DNP" H 0   0   50  0001 C CNN "Notes"
+F 9 "DNP" H 0   0   50  0001 C CNN "Variant"
 	1    5900 3200
 	1    0    0    -1  
 $EndComp
@@ -189,13 +191,13 @@ L calin:ESP-WROOM-32 U1
 U 1 1 59D55783
 P 4200 2250
 F 0 "U1" H 4200 2850 60  0000 C CNN
-F 1 "ESP-WROOM-32" V 4200 2150 60  0000 C CNN
+F 1 "ESP-WROOM-32xxx-16" V 4200 2150 60  0000 C CNN
 F 2 "CalinGeneric:ESP-WROOM-32-HandSolder" H 4200 2100 60  0001 C CNN
 F 3 "" H 4200 2100 60  0001 C CNN
 F 4 "*" H 0   0   50  0001 C CNN "characteristics"
 F 5 "Espressif" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "*" H 0   0   50  0001 C CNN "package"
-F 7 "ESP32-WROOM-32" H 0   0   50  0001 C CNN "part-number"
+F 7 "ESP32-WROOM-32D-16" H 0   0   50  0001 C CNN "part-number"
 	1    4200 2250
 	1    0    0    -1  
 $EndComp
@@ -340,10 +342,10 @@ F 0 "R3" V 5680 1250 40  0000 C CNN
 F 1 "2k2" V 5600 1250 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 5530 1250 30  0001 C CNN
 F 3 "" H 5600 1250 30  0000 C CNN
-F 4 "2k" H 0   0   50  0001 C CNN "characteristics"
+F 4 "2k2" H 0   0   50  0001 C CNN "characteristics"
 F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "0805" H 0   0   50  0001 C CNN "package"
-F 7 "ERJ6ENF2001V" H 0   0   50  0001 C CNN "part-number"
+F 7 "ERJ-6ENF2201V" H 0   0   50  0001 C CNN "part-number"
 	1    5600 1250
 	1    0    0    -1  
 $EndComp
@@ -355,10 +357,10 @@ F 0 "R4" V 5880 1250 40  0000 C CNN
 F 1 "2k2" V 5800 1250 40  0000 C CNN
 F 2 "CalinGeneric:R0805HS" V 5730 1250 30  0001 C CNN
 F 3 "" H 5800 1250 30  0000 C CNN
-F 4 "2k" H 0   0   50  0001 C CNN "characteristics"
+F 4 "2k2" H 0   0   50  0001 C CNN "characteristics"
 F 5 "Panasonic" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "0805" H 0   0   50  0001 C CNN "package"
-F 7 "ERJ6ENF2001V" H 0   0   50  0001 C CNN "part-number"
+F 7 "ERJ-6ENF2201V" H 0   0   50  0001 C CNN "part-number"
 	1    5800 1250
 	1    0    0    -1  
 $EndComp
@@ -677,7 +679,7 @@ F 3 "" H 1300 2500 50  0001 C CNN
 F 4 "Standard CMOS Voltage Detector IC 3.0V" H 0   0   50  0001 C CNN "characteristics"
 F 5 "ROHM Semiconductor" H 0   0   50  0001 C CNN "manufacturer"
 F 6 "SSOP3 (SOT23-3)" H 0   0   50  0001 C CNN "package"
-F 7 "BD49K30" H 0   0   50  0001 C CNN "part-number"
+F 7 "BD48K30G-TL" H 0   0   50  0001 C CNN "part-number"
 F 8 "DNP" H 0   0   50  0001 C CNN "Notes"
 F 9 "test" H 0   0   50  0001 C CNN "Variant"
 	1    1300 2500
@@ -957,6 +959,9 @@ F 0 "J30" H 3250 5850 60  0000 C CNN
 F 1 "AntSMA" V 3350 5550 50  0000 C CNN
 F 2 "CalinConnectors:SMA-90" H 3250 5750 60  0001 C CNN
 F 3 "" H 3250 5750 60  0000 C CNN
+F 4 "RF2-49B-T-00-50-G-HDW or RF2-03E-T-00-50-G" H 0   0   50  0001 C CNN "characteristics"
+F 5 "Adam Tech" H 0   0   50  0001 C CNN "manufacturer"
+F 6 "RF2-49B-T-00-50-G-HDW" H 0   0   50  0001 C CNN "part-number"
 	1    3250 5550
 	1    0    0    -1  
 $EndComp
