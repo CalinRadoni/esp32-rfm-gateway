@@ -1,14 +1,19 @@
 
 # ESP32 RFM69HCW / RFM95/96/97/98(W) Gateway
 
+## Note
+
+This repository is archived because I am building a version with better integration
+in the [pax-devices](https://github.com/CalinRadoni/pax-devices) repository.
+
+## Description
+
 The purpose of this gateway is to either:
 
 - conect a RFM69 network to Wi-Fi
 - conect a LoRa&trade; network to Wi-Fi
 
 The gateway was designed for power efficiency without sacrificing functionality.
-
-**Status:** (*this is work in progress !*)
 
 ## Features
 
